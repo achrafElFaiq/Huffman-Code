@@ -1,0 +1,121 @@
+\hypertarget{_ensemble_8h}{}\doxysection{Référence du fichier include/\+Ensemble.h}
+\label{_ensemble_8h}\index{include/Ensemble.h@{include/Ensemble.h}}
+
+
+Implantation du TAD \mbox{\hyperlink{struct_ensemble}{Ensemble}} pour le Compresseur d\textquotesingle{}Huffman.  
+
+
+{\ttfamily \#include $<$stddef.\+h$>$}\newline
+\doxysubsection*{Structures de données}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_ensemble}{Ensemble}}
+\begin{DoxyCompactList}\small\item\em Le type \mbox{\hyperlink{struct_ensemble}{Ensemble}} permet d\textquotesingle{}implementer plusieurs fonctions nécessaire dans compresser et décompresser. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_ensemble}{Ensemble}} \mbox{\hyperlink{_ensemble_8h_ae6c2f14916e96e669cf468002d18a47a}{E\+\_\+initialiser\+Ensemble}} (size\+\_\+t taille\+Element)
+\begin{DoxyCompactList}\small\item\em Fonction qui permet d\textquotesingle{}initialiser un ensemble. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_ensemble_8h_a94880c64eb2e6653c15f1d8d107a1568}{E\+\_\+ajouter}} (\mbox{\hyperlink{struct_ensemble}{Ensemble}} $\ast$ens, void $\ast$element)
+\begin{DoxyCompactList}\small\item\em Fonction qui permet d\textquotesingle{}ajouter un element dans un ensemble. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_ensemble_8h_a890b482c41603bb94a927fd5165ab96b}{E\+\_\+supprimer}} (\mbox{\hyperlink{struct_ensemble}{Ensemble}} $\ast$ens, void $\ast$element)
+\begin{DoxyCompactList}\small\item\em Fonction qui permet de supprimer un element dans un ensemble. \end{DoxyCompactList}\item 
+void $\ast$ \mbox{\hyperlink{_ensemble_8h_ab965d4d2a4d3a146811567545ca3f4d3}{E\+\_\+obtenir\+Ieme\+Element}} (const \mbox{\hyperlink{struct_ensemble}{Ensemble}} $\ast$ens, size\+\_\+t index)
+\begin{DoxyCompactList}\small\item\em Fonction qui permet d\textquotesingle{}obtenir l\textquotesingle{}ieme element d\textquotesingle{}un ensemble. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_ensemble_8h_acc01e1153a165a80b61cb710a50af281}{E\+\_\+liberer\+Ensemble}} (\mbox{\hyperlink{struct_ensemble}{Ensemble}} $\ast$ens)
+\begin{DoxyCompactList}\small\item\em Fonction qui permet de libérer un ensemble. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+Implantation du TAD \mbox{\hyperlink{struct_ensemble}{Ensemble}} pour le Compresseur d\textquotesingle{}Huffman. 
+
+\begin{DoxyAuthor}{Auteur}
+A. El Faïq, T. Barsot, W. Vilayvong, E. Lefeuvre 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Documentation des fonctions}
+\mbox{\Hypertarget{_ensemble_8h_a94880c64eb2e6653c15f1d8d107a1568}\label{_ensemble_8h_a94880c64eb2e6653c15f1d8d107a1568}} 
+\index{Ensemble.h@{Ensemble.h}!E\_ajouter@{E\_ajouter}}
+\index{E\_ajouter@{E\_ajouter}!Ensemble.h@{Ensemble.h}}
+\doxysubsubsection{\texorpdfstring{E\_ajouter()}{E\_ajouter()}}
+{\footnotesize\ttfamily void E\+\_\+ajouter (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_ensemble}{Ensemble}} $\ast$}]{ens,  }\item[{void $\ast$}]{element }\end{DoxyParamCaption})}
+
+
+
+Fonction qui permet d\textquotesingle{}ajouter un element dans un ensemble. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em ens} & \+: l\textquotesingle{}ensemble \\
+\hline
+{\em element} & \+: l\textquotesingle{}element à ajouter \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_ensemble_8h_ae6c2f14916e96e669cf468002d18a47a}\label{_ensemble_8h_ae6c2f14916e96e669cf468002d18a47a}} 
+\index{Ensemble.h@{Ensemble.h}!E\_initialiserEnsemble@{E\_initialiserEnsemble}}
+\index{E\_initialiserEnsemble@{E\_initialiserEnsemble}!Ensemble.h@{Ensemble.h}}
+\doxysubsubsection{\texorpdfstring{E\_initialiserEnsemble()}{E\_initialiserEnsemble()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_ensemble}{Ensemble}} E\+\_\+initialiser\+Ensemble (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{taille\+Element }\end{DoxyParamCaption})}
+
+
+
+Fonction qui permet d\textquotesingle{}initialiser un ensemble. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em taille\+Element} & \+: taille de l\textquotesingle{}element qui va être utilisé \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+\mbox{\hyperlink{struct_ensemble}{Ensemble}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_ensemble_8h_acc01e1153a165a80b61cb710a50af281}\label{_ensemble_8h_acc01e1153a165a80b61cb710a50af281}} 
+\index{Ensemble.h@{Ensemble.h}!E\_libererEnsemble@{E\_libererEnsemble}}
+\index{E\_libererEnsemble@{E\_libererEnsemble}!Ensemble.h@{Ensemble.h}}
+\doxysubsubsection{\texorpdfstring{E\_libererEnsemble()}{E\_libererEnsemble()}}
+{\footnotesize\ttfamily void E\+\_\+liberer\+Ensemble (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_ensemble}{Ensemble}} $\ast$}]{ens }\end{DoxyParamCaption})}
+
+
+
+Fonction qui permet de libérer un ensemble. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em ens} & \+: l\textquotesingle{}ensemble \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_ensemble_8h_ab965d4d2a4d3a146811567545ca3f4d3}\label{_ensemble_8h_ab965d4d2a4d3a146811567545ca3f4d3}} 
+\index{Ensemble.h@{Ensemble.h}!E\_obtenirIemeElement@{E\_obtenirIemeElement}}
+\index{E\_obtenirIemeElement@{E\_obtenirIemeElement}!Ensemble.h@{Ensemble.h}}
+\doxysubsubsection{\texorpdfstring{E\_obtenirIemeElement()}{E\_obtenirIemeElement()}}
+{\footnotesize\ttfamily void$\ast$ E\+\_\+obtenir\+Ieme\+Element (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_ensemble}{Ensemble}} $\ast$}]{ens,  }\item[{size\+\_\+t}]{index }\end{DoxyParamCaption})}
+
+
+
+Fonction qui permet d\textquotesingle{}obtenir l\textquotesingle{}ieme element d\textquotesingle{}un ensemble. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em ens} & \+: l\textquotesingle{}ensemble \\
+\hline
+{\em index} & \+: la position de l\textquotesingle{}element que l\textquotesingle{}on cherche \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_ensemble_8h_a890b482c41603bb94a927fd5165ab96b}\label{_ensemble_8h_a890b482c41603bb94a927fd5165ab96b}} 
+\index{Ensemble.h@{Ensemble.h}!E\_supprimer@{E\_supprimer}}
+\index{E\_supprimer@{E\_supprimer}!Ensemble.h@{Ensemble.h}}
+\doxysubsubsection{\texorpdfstring{E\_supprimer()}{E\_supprimer()}}
+{\footnotesize\ttfamily void E\+\_\+supprimer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_ensemble}{Ensemble}} $\ast$}]{ens,  }\item[{void $\ast$}]{element }\end{DoxyParamCaption})}
+
+
+
+Fonction qui permet de supprimer un element dans un ensemble. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em ens} & \+: l\textquotesingle{}ensemble \\
+\hline
+{\em element} & \+: l\textquotesingle{}element à supprimer \\
+\hline
+\end{DoxyParams}

@@ -1,0 +1,177 @@
+\hypertarget{_arbre_huffman_8h}{}\doxysection{Référence du fichier include/\+Arbre\+Huffman.h}
+\label{_arbre_huffman_8h}\index{include/ArbreHuffman.h@{include/ArbreHuffman.h}}
+
+
+Implantation du TAD Arbre Huffman pour le Compresseur d\textquotesingle{}Huffman.  
+
+
+{\ttfamily \#include \char`\"{}Statistiques.\+h\char`\"{}}\newline
+\doxysubsection*{Structures de données}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_arbre_huffman}{Arbre\+Huffman}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Définitions de type}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{_arbre_huffman_8h_a3428c82af17b7c591072ada6377706cc}\label{_arbre_huffman_8h_a3428c82af17b7c591072ada6377706cc}} 
+typedef struct \mbox{\hyperlink{struct_arbre_huffman}{Arbre\+Huffman}} \mbox{\hyperlink{_arbre_huffman_8h_a3428c82af17b7c591072ada6377706cc}{Arbre\+Huffman}}
+\begin{DoxyCompactList}\small\item\em Le type \mbox{\hyperlink{struct_arbre_huffman}{Arbre\+Huffman}} permet de stocker et de ranger les statistiques. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_arbre_huffman}{Arbre\+Huffman}} $\ast$ \mbox{\hyperlink{_arbre_huffman_8h_a928e34fcf14ec5ee8c69b6efe8db626e}{AH\+\_\+arbre\+De\+Huffman}} (\mbox{\hyperlink{struct_statistiques}{Statistiques}} stat)
+\begin{DoxyCompactList}\small\item\em Fonction de création d\textquotesingle{}un arbre d\textquotesingle{}huffman (vide) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_arbre_huffman_8h_ac0d93ed84883d08bcaf8a0ef72fa2b26}\label{_arbre_huffman_8h_ac0d93ed84883d08bcaf8a0ef72fa2b26}} 
+void {\bfseries AH\+\_\+fixer\+Statistique} (\mbox{\hyperlink{struct_arbre_huffman}{Arbre\+Huffman}} $\ast$arbre, \mbox{\hyperlink{struct_statistiques}{Statistiques}} stat)
+\item 
+\mbox{\hyperlink{struct_statistiques}{Statistiques}} \mbox{\hyperlink{_arbre_huffman_8h_a4797a70e8723ee33648d210902b40828}{AH\+\_\+obtenir\+Stat}} (\mbox{\hyperlink{struct_arbre_huffman}{Arbre\+Huffman}} arbre)
+\begin{DoxyCompactList}\small\item\em Fonction qui permet d\textquotesingle{}obtenir la statistique contenue dans l\textquotesingle{}arbre. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_arbre_huffman_8h_a2005cc7822606689713fdd40798a0993}\label{_arbre_huffman_8h_a2005cc7822606689713fdd40798a0993}} 
+\mbox{\hyperlink{struct_arbre_huffman}{Arbre\+Huffman}} $\ast$ {\bfseries AH\+\_\+fusionner} (\mbox{\hyperlink{struct_arbre_huffman}{Arbre\+Huffman}} $\ast$ah1, \mbox{\hyperlink{struct_arbre_huffman}{Arbre\+Huffman}} $\ast$ah2)
+\item 
+\mbox{\Hypertarget{_arbre_huffman_8h_ad7ed01bce328c4c13cf339208868d8c0}\label{_arbre_huffman_8h_ad7ed01bce328c4c13cf339208868d8c0}} 
+void {\bfseries AH\+\_\+fixer\+Fils\+Gauche} (\mbox{\hyperlink{struct_arbre_huffman}{Arbre\+Huffman}} $\ast$ah1, \mbox{\hyperlink{struct_arbre_huffman}{Arbre\+Huffman}} $\ast$fg)
+\item 
+\mbox{\Hypertarget{_arbre_huffman_8h_a77cdde5b8c6504a8db7cd96912012bc0}\label{_arbre_huffman_8h_a77cdde5b8c6504a8db7cd96912012bc0}} 
+void {\bfseries AH\+\_\+fixer\+Fils\+Droit} (\mbox{\hyperlink{struct_arbre_huffman}{Arbre\+Huffman}} $\ast$ah1, \mbox{\hyperlink{struct_arbre_huffman}{Arbre\+Huffman}} $\ast$fd)
+\item 
+\mbox{\Hypertarget{_arbre_huffman_8h_a4ea8bf735fceeb2f3db2ffaf8679e932}\label{_arbre_huffman_8h_a4ea8bf735fceeb2f3db2ffaf8679e932}} 
+\mbox{\hyperlink{struct_arbre_huffman}{Arbre\+Huffman}} $\ast$ {\bfseries AH\+\_\+obtenir\+Fils\+Gauche} (\mbox{\hyperlink{struct_arbre_huffman}{Arbre\+Huffman}} $\ast$ah1)
+\item 
+\mbox{\Hypertarget{_arbre_huffman_8h_a5617f8b2b21da40f74836102daefae6a}\label{_arbre_huffman_8h_a5617f8b2b21da40f74836102daefae6a}} 
+\mbox{\hyperlink{struct_arbre_huffman}{Arbre\+Huffman}} $\ast$ {\bfseries AH\+\_\+obtenir\+Fils\+Droit} (\mbox{\hyperlink{struct_arbre_huffman}{Arbre\+Huffman}} $\ast$ah1)
+\item 
+\mbox{\Hypertarget{_arbre_huffman_8h_aff23a0bc51d2f6c67756d2da4397000a}\label{_arbre_huffman_8h_aff23a0bc51d2f6c67756d2da4397000a}} 
+bool {\bfseries AH\+\_\+est\+Vide} (\mbox{\hyperlink{struct_arbre_huffman}{Arbre\+Huffman}} $\ast$arbre)
+\item 
+bool \mbox{\hyperlink{_arbre_huffman_8h_a1482771e0d2bf106afb6699f81110bb1}{AH\+\_\+est\+Feuille}} (\mbox{\hyperlink{struct_arbre_huffman}{Arbre\+Huffman}} arbre)
+\begin{DoxyCompactList}\small\item\em Fonction qui permet de savoir si un arbre est une feuille. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_arbre_huffman_8h_a2637d36aae703c5d6c77d7d9429862e6}\label{_arbre_huffman_8h_a2637d36aae703c5d6c77d7d9429862e6}} 
+bool {\bfseries AH\+\_\+est\+Present} (\mbox{\hyperlink{struct_arbre_huffman}{Arbre\+Huffman}} $\ast$arbre, char caractere)
+\item 
+char \mbox{\hyperlink{_arbre_huffman_8h_a4e6fe95372ff5c5a4edd7bbaf8801ab5}{AH\+\_\+obtenir\+Caracter}} (\mbox{\hyperlink{struct_arbre_huffman}{Arbre\+Huffman}} arbre)
+\begin{DoxyCompactList}\small\item\em Fonction qui permet d\textquotesingle{}obtenir le caractère d\textquotesingle{}un arbre. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{_arbre_huffman_8h_a1e5e470e522475fb8b9f1dba1cd87f64}{AH\+\_\+obtenir\+Ponderation}} (\mbox{\hyperlink{struct_arbre_huffman}{Arbre\+Huffman}} arbre)
+\begin{DoxyCompactList}\small\item\em Fonction qui permet d\textquotesingle{}obtenir la pondération d\textquotesingle{}un arbre. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_arbre_huffman_8h_a29ac5840f97a4a05b6a71df871935b98}{AH\+\_\+afficher\+Arbre}} (\mbox{\hyperlink{struct_arbre_huffman}{Arbre\+Huffman}} $\ast$arbre)
+\begin{DoxyCompactList}\small\item\em Fonction qui permet d\textquotesingle{}afficher les éléments d\textquotesingle{}un arbre. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_arbre_huffman_8h_aa16042606f8d44021b638da16cd07621}\label{_arbre_huffman_8h_aa16042606f8d44021b638da16cd07621}} 
+\mbox{\hyperlink{struct_arbre_huffman}{Arbre\+Huffman}} $\ast$ {\bfseries copier\+Arbre\+Huffman} (\mbox{\hyperlink{struct_arbre_huffman}{Arbre\+Huffman}} $\ast$arbre)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+Implantation du TAD Arbre Huffman pour le Compresseur d\textquotesingle{}Huffman. 
+
+\begin{DoxyAuthor}{Auteur}
+A. El Faiq, T. Barsot, W. Vilayvong, E. Lefeuvre 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Documentation des fonctions}
+\mbox{\Hypertarget{_arbre_huffman_8h_a29ac5840f97a4a05b6a71df871935b98}\label{_arbre_huffman_8h_a29ac5840f97a4a05b6a71df871935b98}} 
+\index{ArbreHuffman.h@{ArbreHuffman.h}!AH\_afficherArbre@{AH\_afficherArbre}}
+\index{AH\_afficherArbre@{AH\_afficherArbre}!ArbreHuffman.h@{ArbreHuffman.h}}
+\doxysubsubsection{\texorpdfstring{AH\_afficherArbre()}{AH\_afficherArbre()}}
+{\footnotesize\ttfamily void AH\+\_\+afficher\+Arbre (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_arbre_huffman}{Arbre\+Huffman}} $\ast$}]{arbre }\end{DoxyParamCaption})}
+
+
+
+Fonction qui permet d\textquotesingle{}afficher les éléments d\textquotesingle{}un arbre. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em arbre} & \+: l\textquotesingle{}arbre \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_arbre_huffman_8h_a928e34fcf14ec5ee8c69b6efe8db626e}\label{_arbre_huffman_8h_a928e34fcf14ec5ee8c69b6efe8db626e}} 
+\index{ArbreHuffman.h@{ArbreHuffman.h}!AH\_arbreDeHuffman@{AH\_arbreDeHuffman}}
+\index{AH\_arbreDeHuffman@{AH\_arbreDeHuffman}!ArbreHuffman.h@{ArbreHuffman.h}}
+\doxysubsubsection{\texorpdfstring{AH\_arbreDeHuffman()}{AH\_arbreDeHuffman()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_arbre_huffman}{Arbre\+Huffman}}$\ast$ AH\+\_\+arbre\+De\+Huffman (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_statistiques}{Statistiques}}}]{stat }\end{DoxyParamCaption})}
+
+
+
+Fonction de création d\textquotesingle{}un arbre d\textquotesingle{}huffman (vide) 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em stat} & \+: Statistique contenue dans l\textquotesingle{}arbre \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+\mbox{\hyperlink{struct_arbre_huffman}{Arbre\+Huffman}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_arbre_huffman_8h_a1482771e0d2bf106afb6699f81110bb1}\label{_arbre_huffman_8h_a1482771e0d2bf106afb6699f81110bb1}} 
+\index{ArbreHuffman.h@{ArbreHuffman.h}!AH\_estFeuille@{AH\_estFeuille}}
+\index{AH\_estFeuille@{AH\_estFeuille}!ArbreHuffman.h@{ArbreHuffman.h}}
+\doxysubsubsection{\texorpdfstring{AH\_estFeuille()}{AH\_estFeuille()}}
+{\footnotesize\ttfamily bool AH\+\_\+est\+Feuille (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_arbre_huffman}{Arbre\+Huffman}}}]{arbre }\end{DoxyParamCaption})}
+
+
+
+Fonction qui permet de savoir si un arbre est une feuille. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em arbre} & \+: l\textquotesingle{}arbre \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+bool 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_arbre_huffman_8h_a4e6fe95372ff5c5a4edd7bbaf8801ab5}\label{_arbre_huffman_8h_a4e6fe95372ff5c5a4edd7bbaf8801ab5}} 
+\index{ArbreHuffman.h@{ArbreHuffman.h}!AH\_obtenirCaracter@{AH\_obtenirCaracter}}
+\index{AH\_obtenirCaracter@{AH\_obtenirCaracter}!ArbreHuffman.h@{ArbreHuffman.h}}
+\doxysubsubsection{\texorpdfstring{AH\_obtenirCaracter()}{AH\_obtenirCaracter()}}
+{\footnotesize\ttfamily char AH\+\_\+obtenir\+Caracter (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_arbre_huffman}{Arbre\+Huffman}}}]{arbre }\end{DoxyParamCaption})}
+
+
+
+Fonction qui permet d\textquotesingle{}obtenir le caractère d\textquotesingle{}un arbre. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em arbre} & \+: l\textquotesingle{}arbre \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+char 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_arbre_huffman_8h_a1e5e470e522475fb8b9f1dba1cd87f64}\label{_arbre_huffman_8h_a1e5e470e522475fb8b9f1dba1cd87f64}} 
+\index{ArbreHuffman.h@{ArbreHuffman.h}!AH\_obtenirPonderation@{AH\_obtenirPonderation}}
+\index{AH\_obtenirPonderation@{AH\_obtenirPonderation}!ArbreHuffman.h@{ArbreHuffman.h}}
+\doxysubsubsection{\texorpdfstring{AH\_obtenirPonderation()}{AH\_obtenirPonderation()}}
+{\footnotesize\ttfamily int AH\+\_\+obtenir\+Ponderation (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_arbre_huffman}{Arbre\+Huffman}}}]{arbre }\end{DoxyParamCaption})}
+
+
+
+Fonction qui permet d\textquotesingle{}obtenir la pondération d\textquotesingle{}un arbre. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em arbre} & \+: l\textquotesingle{}arbre \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_arbre_huffman_8h_a4797a70e8723ee33648d210902b40828}\label{_arbre_huffman_8h_a4797a70e8723ee33648d210902b40828}} 
+\index{ArbreHuffman.h@{ArbreHuffman.h}!AH\_obtenirStat@{AH\_obtenirStat}}
+\index{AH\_obtenirStat@{AH\_obtenirStat}!ArbreHuffman.h@{ArbreHuffman.h}}
+\doxysubsubsection{\texorpdfstring{AH\_obtenirStat()}{AH\_obtenirStat()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_statistiques}{Statistiques}} AH\+\_\+obtenir\+Stat (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_arbre_huffman}{Arbre\+Huffman}}}]{arbre }\end{DoxyParamCaption})}
+
+
+
+Fonction qui permet d\textquotesingle{}obtenir la statistique contenue dans l\textquotesingle{}arbre. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em arbre} & \+: L\textquotesingle{}arbre dont on veut connaître la statistique \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+\mbox{\hyperlink{struct_statistiques}{Statistiques}} 
+\end{DoxyReturn}

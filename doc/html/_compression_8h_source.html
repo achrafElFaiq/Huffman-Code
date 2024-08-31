@@ -1,0 +1,133 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Compresseur de Huffman:  Fichier source de include/Compression.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Compresseur de Huffman
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Compression.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_compression_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#ifndef  __COMPRESSION__</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#define __COMPRESSION__</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;stdbool.h&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;stdio.h&gt;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_arbre_huffman_8h.html">ArbreHuffman.h</a>&quot;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_file_de_priorite_8h.html">FileDePriorite.h</a>&quot;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_ensemble_8h.html">Ensemble.h</a>&quot;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_statistiques_8h.html">Statistiques.h</a>&quot;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_table_de_codage_8h.html">TableDeCodage.h</a>&quot;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<a class="code" href="struct_arbre_huffman.html">ArbreHuffman</a> <a class="code" href="_compression_8h.html#acb0249c619524773403a20e797bea39f">COMP_creerArbre</a>(<a class="code" href="struct_statistiques.html">Statistiques</a> stats);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<a class="code" href="struct_file_de_priorite.html">FileDePriorite</a> <a class="code" href="_compression_8h.html#adb2a31d860b37fdc82f4661c0d2d32e8">COMP_insererArbre</a>(<a class="code" href="struct_file_de_priorite.html">FileDePriorite</a> file, <a class="code" href="struct_arbre_huffman.html">ArbreHuffman</a> arbre);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keywordtype">int</span> <a class="code" href="_compression_8h.html#af61fb9ae299ab760f1958f1038907852">COMP_obtenirOccurences</a>(<span class="keywordtype">char</span> c);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<a class="code" href="struct_ensemble.html">Ensemble</a> <a class="code" href="_compression_8h.html#ab7310a71a8eaf7ec43129fb94db86340">COMP_obtenirCaracteres</a>(<span class="keywordtype">char</span> nomFichier[]);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<a class="code" href="struct_ensemble.html">Ensemble</a> <a class="code" href="_compression_8h.html#ac41510338fc26064280945f39622a07e">COMP_creerStatistiques</a>(<span class="keywordtype">char</span> nomFichier[], <a class="code" href="struct_ensemble.html">Ensemble</a> ensC);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<a class="code" href="struct_file_de_priorite.html">FileDePriorite</a> <a class="code" href="_compression_8h.html#a84abbe8ecaef2713c7b00093de901111">COMP_creerFileDePriorite</a>(<span class="keywordtype">char</span> nomFichier[]);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<a class="code" href="struct_table_de_codage.html">TableDeCodage</a> <a class="code" href="_compression_8h.html#a871d73b7f32e4fac8b60b82cc04ad396">COMP_creerTableDeCodage</a>(<a class="code" href="struct_arbre_huffman.html">ArbreHuffman</a> arbre);</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;FILE <a class="code" href="_compression_8h.html#ab96b5fefa7c31c54dd1421f7408880d6">COMP_compresser</a>(<span class="keywordtype">char</span> nomFichier[]);</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="a_arbre_huffman_8h_html"><div class="ttname"><a href="_arbre_huffman_8h.html">ArbreHuffman.h</a></div><div class="ttdoc">Implantation du TAD Arbre Huffman pour le Compresseur d'Huffman.</div></div>
+<div class="ttc" id="a_compression_8h_html_a84abbe8ecaef2713c7b00093de901111"><div class="ttname"><a href="_compression_8h.html#a84abbe8ecaef2713c7b00093de901111">COMP_creerFileDePriorite</a></div><div class="ttdeci">FileDePriorite COMP_creerFileDePriorite(char nomFichier[])</div><div class="ttdoc">Fonction qui permet de créer une file de priorité à partir d'un fichier donné</div><div class="ttdef"><b>Definition:</b> Compression.c:54</div></div>
+<div class="ttc" id="a_compression_8h_html_a871d73b7f32e4fac8b60b82cc04ad396"><div class="ttname"><a href="_compression_8h.html#a871d73b7f32e4fac8b60b82cc04ad396">COMP_creerTableDeCodage</a></div><div class="ttdeci">TableDeCodage COMP_creerTableDeCodage(ArbreHuffman arbre)</div><div class="ttdoc">Fonction qui permet de créer une table de codage à partir d'un arbre de Huffman.</div><div class="ttdef"><b>Definition:</b> Compression.c:74</div></div>
+<div class="ttc" id="a_compression_8h_html_ab7310a71a8eaf7ec43129fb94db86340"><div class="ttname"><a href="_compression_8h.html#ab7310a71a8eaf7ec43129fb94db86340">COMP_obtenirCaracteres</a></div><div class="ttdeci">Ensemble COMP_obtenirCaracteres(char nomFichier[])</div><div class="ttdoc">Fonction qui permet d'obtenir les caractères présents dans un fichier donné</div><div class="ttdef"><b>Definition:</b> Compression.c:24</div></div>
+<div class="ttc" id="a_compression_8h_html_ab96b5fefa7c31c54dd1421f7408880d6"><div class="ttname"><a href="_compression_8h.html#ab96b5fefa7c31c54dd1421f7408880d6">COMP_compresser</a></div><div class="ttdeci">FILE COMP_compresser(char nomFichier[])</div><div class="ttdoc">Fonction qui permet de créer un fichier compressé à partir d'un fichier donné</div><div class="ttdef"><b>Definition:</b> Compression.c:78</div></div>
+<div class="ttc" id="a_compression_8h_html_ac41510338fc26064280945f39622a07e"><div class="ttname"><a href="_compression_8h.html#ac41510338fc26064280945f39622a07e">COMP_creerStatistiques</a></div><div class="ttdeci">Ensemble COMP_creerStatistiques(char nomFichier[], Ensemble ensC)</div><div class="ttdoc">Fonction qui permet de créer un ensemble de statistiques pour chaque caractère d'un fichier.</div><div class="ttdef"><b>Definition:</b> Compression.c:48</div></div>
+<div class="ttc" id="a_compression_8h_html_acb0249c619524773403a20e797bea39f"><div class="ttname"><a href="_compression_8h.html#acb0249c619524773403a20e797bea39f">COMP_creerArbre</a></div><div class="ttdeci">ArbreHuffman COMP_creerArbre(Statistiques stats)</div><div class="ttdoc">Fonction qui crée un arbre à partir de statistiques.</div><div class="ttdef"><b>Definition:</b> Compression.c:12</div></div>
+<div class="ttc" id="a_compression_8h_html_adb2a31d860b37fdc82f4661c0d2d32e8"><div class="ttname"><a href="_compression_8h.html#adb2a31d860b37fdc82f4661c0d2d32e8">COMP_insererArbre</a></div><div class="ttdeci">FileDePriorite COMP_insererArbre(FileDePriorite file, ArbreHuffman arbre)</div><div class="ttdoc">Fonction qui insère un arbre dans une file.</div><div class="ttdef"><b>Definition:</b> Compression.c:16</div></div>
+<div class="ttc" id="a_compression_8h_html_af61fb9ae299ab760f1958f1038907852"><div class="ttname"><a href="_compression_8h.html#af61fb9ae299ab760f1958f1038907852">COMP_obtenirOccurences</a></div><div class="ttdeci">int COMP_obtenirOccurences(char c)</div><div class="ttdoc">Fonction qui permet d'obtenir les occurences d'un caractère donné</div><div class="ttdef"><b>Definition:</b> Compression.c:20</div></div>
+<div class="ttc" id="a_ensemble_8h_html"><div class="ttname"><a href="_ensemble_8h.html">Ensemble.h</a></div><div class="ttdoc">Implantation du TAD Ensemble pour le Compresseur d'Huffman.</div></div>
+<div class="ttc" id="a_file_de_priorite_8h_html"><div class="ttname"><a href="_file_de_priorite_8h.html">FileDePriorite.h</a></div><div class="ttdoc">Implantation du TAD FileDePriorite pour le Compresseur d'Huffman.</div></div>
+<div class="ttc" id="a_statistiques_8h_html"><div class="ttname"><a href="_statistiques_8h.html">Statistiques.h</a></div><div class="ttdoc">Implantation du TAD Statistiques pour le Compresseur d'Huffman.</div></div>
+<div class="ttc" id="a_table_de_codage_8h_html"><div class="ttname"><a href="_table_de_codage_8h.html">TableDeCodage.h</a></div><div class="ttdoc">Implantation du TAD TableDeCodage pour le Compresseur d'Huffman.</div></div>
+<div class="ttc" id="astruct_arbre_huffman_html"><div class="ttname"><a href="struct_arbre_huffman.html">ArbreHuffman</a></div><div class="ttdef"><b>Definition:</b> ArbreHuffman.h:19</div></div>
+<div class="ttc" id="astruct_ensemble_html"><div class="ttname"><a href="struct_ensemble.html">Ensemble</a></div><div class="ttdoc">Le type Ensemble permet d'implementer plusieurs fonctions nécessaire dans compresser et décompresser.</div><div class="ttdef"><b>Definition:</b> Ensemble.h:16</div></div>
+<div class="ttc" id="astruct_file_de_priorite_html"><div class="ttname"><a href="struct_file_de_priorite.html">FileDePriorite</a></div><div class="ttdef"><b>Definition:</b> FileDePriorite.h:23</div></div>
+<div class="ttc" id="astruct_statistiques_html"><div class="ttname"><a href="struct_statistiques.html">Statistiques</a></div><div class="ttdoc">Le type Statistiques permet de donner le nombre d'occurences d'un caractere dans un fichier.</div><div class="ttdef"><b>Definition:</b> Statistiques.h:16</div></div>
+<div class="ttc" id="astruct_table_de_codage_html"><div class="ttname"><a href="struct_table_de_codage.html">TableDeCodage</a></div><div class="ttdef"><b>Definition:</b> TableDeCodage.h:24</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré le Samedi 6 Janvier 2024 14:45:17 pour Compresseur de Huffman par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

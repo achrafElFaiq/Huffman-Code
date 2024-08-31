@@ -1,0 +1,189 @@
+\hypertarget{_file_de_priorite_8h}{}\doxysection{Référence du fichier include/\+File\+De\+Priorite.h}
+\label{_file_de_priorite_8h}\index{include/FileDePriorite.h@{include/FileDePriorite.h}}
+
+
+Implantation du TAD \mbox{\hyperlink{struct_file_de_priorite}{File\+De\+Priorite}} pour le Compresseur d\textquotesingle{}Huffman.  
+
+
+{\ttfamily \#include $<$stdbool.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}Arbre\+Huffman.\+h\char`\"{}}\newline
+\doxysubsection*{Structures de données}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_noeud}{Noeud}}
+\begin{DoxyCompactList}\small\item\em Le type \mbox{\hyperlink{struct_file_de_priorite}{File\+De\+Priorite}} est un type qui permet de faire une file d\textquotesingle{}arbre d\textquotesingle{}Huffman pour les trier. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_file_de_priorite}{File\+De\+Priorite}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Définitions de type}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{_file_de_priorite_8h_a8e9241b13e33c89b710a91795150ede0}\label{_file_de_priorite_8h_a8e9241b13e33c89b710a91795150ede0}} 
+typedef struct \mbox{\hyperlink{struct_noeud}{Noeud}} \mbox{\hyperlink{_file_de_priorite_8h_a8e9241b13e33c89b710a91795150ede0}{Noeud}}
+\begin{DoxyCompactList}\small\item\em Le type \mbox{\hyperlink{struct_file_de_priorite}{File\+De\+Priorite}} est un type qui permet de faire une file d\textquotesingle{}arbre d\textquotesingle{}Huffman pour les trier. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{_file_de_priorite_8h_a8faca263fc54f136817b5543dcdb495d}{FDP\+\_\+nouvelle\+File}} (\mbox{\hyperlink{struct_file_de_priorite}{File\+De\+Priorite}} $\ast$file)
+\begin{DoxyCompactList}\small\item\em Fonction qui fusionne les deux arbres les plus prioritaires d\textquotesingle{}une file. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_file_de_priorite_8h_aa32b5993744004450840fa9f1d520041}{FDP\+\_\+defiler}} (\mbox{\hyperlink{struct_file_de_priorite}{File\+De\+Priorite}} $\ast$fp)
+\begin{DoxyCompactList}\small\item\em Fonction qui va défiler une file. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_arbre_huffman}{Arbre\+Huffman}} \mbox{\hyperlink{_file_de_priorite_8h_a80344bf42b11189be97938df7ca8e9f0}{FDP\+\_\+obtenir\+Element}} (\mbox{\hyperlink{struct_file_de_priorite}{File\+De\+Priorite}} fp, int i)
+\begin{DoxyCompactList}\small\item\em Fonction qui va permettre d\textquotesingle{}obtenir l\textquotesingle{}ieme element d\textquotesingle{}une file. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{_file_de_priorite_8h_a0367edebed9ce1024e1a774ea79755e4}{FDP\+\_\+est\+Vide}} (\mbox{\hyperlink{struct_file_de_priorite}{File\+De\+Priorite}} $\ast$fp)
+\begin{DoxyCompactList}\small\item\em Fonction qui va permettre de verifier si une file est vide ou non. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_file_de_priorite}{File\+De\+Priorite}} \mbox{\hyperlink{_file_de_priorite_8h_a4498970b54b77d39d1db474fa35f3966}{FDP\+\_\+file\+De\+Priorite}} ()
+\begin{DoxyCompactList}\small\item\em Permet de creer et initialiser une file. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_file_de_priorite_8h_ac16d8b9d15a9c350320195786da7b59e}\label{_file_de_priorite_8h_ac16d8b9d15a9c350320195786da7b59e}} 
+void {\bfseries FDP\+\_\+enfiler} (\mbox{\hyperlink{struct_file_de_priorite}{File\+De\+Priorite}} $\ast$file, \mbox{\hyperlink{struct_arbre_huffman}{Arbre\+Huffman}} $\ast$arbre)
+\item 
+\mbox{\hyperlink{struct_noeud}{Noeud}} $\ast$ \mbox{\hyperlink{_file_de_priorite_8h_aceb6a6334a9d8c8c8660e0580c1db1dd}{FDP\+\_\+create\+Noeud}} (\mbox{\hyperlink{struct_arbre_huffman}{Arbre\+Huffman}} $\ast$arbre\+Of\+LCA)
+\begin{DoxyCompactList}\small\item\em Crée un noeud qui contient un arbre et un pointeur vers un autre. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_file_de_priorite_8h_a78108e88ee10f953644a635ba42e3ec6}{FDP\+\_\+afficher\+File\+DEPriorite}} (\mbox{\hyperlink{struct_file_de_priorite}{File\+De\+Priorite}} $\ast$file)
+\begin{DoxyCompactList}\small\item\em Affiche la file pour avoir une vision plus pratique et graphique. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{_file_de_priorite_8h_ab991880c8b9caea0a3533553b6e31f41}{trouver\+Indice\+Pour\+Insere}} (\mbox{\hyperlink{struct_arbre_huffman}{Arbre\+Huffman}} $\ast$arbre, \mbox{\hyperlink{struct_file_de_priorite}{File\+De\+Priorite}} $\ast$file)
+\begin{DoxyCompactList}\small\item\em Permet de trouver l\textquotesingle{}indice du dernier élement plus grand que la ponderation de l\textquotesingle{}arbre qu\textquotesingle{}on veut insérer. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+Implantation du TAD \mbox{\hyperlink{struct_file_de_priorite}{File\+De\+Priorite}} pour le Compresseur d\textquotesingle{}Huffman. 
+
+\begin{DoxyAuthor}{Auteur}
+A. El Faïq, T. Barsot, W. Vilayvong, E. Lefeuvre 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Documentation des fonctions}
+\mbox{\Hypertarget{_file_de_priorite_8h_a78108e88ee10f953644a635ba42e3ec6}\label{_file_de_priorite_8h_a78108e88ee10f953644a635ba42e3ec6}} 
+\index{FileDePriorite.h@{FileDePriorite.h}!FDP\_afficherFileDEPriorite@{FDP\_afficherFileDEPriorite}}
+\index{FDP\_afficherFileDEPriorite@{FDP\_afficherFileDEPriorite}!FileDePriorite.h@{FileDePriorite.h}}
+\doxysubsubsection{\texorpdfstring{FDP\_afficherFileDEPriorite()}{FDP\_afficherFileDEPriorite()}}
+{\footnotesize\ttfamily void FDP\+\_\+afficher\+File\+DEPriorite (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_file_de_priorite}{File\+De\+Priorite}} $\ast$}]{file }\end{DoxyParamCaption})}
+
+
+
+Affiche la file pour avoir une vision plus pratique et graphique. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em file} & \+: file à afficher \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_file_de_priorite_8h_aceb6a6334a9d8c8c8660e0580c1db1dd}\label{_file_de_priorite_8h_aceb6a6334a9d8c8c8660e0580c1db1dd}} 
+\index{FileDePriorite.h@{FileDePriorite.h}!FDP\_createNoeud@{FDP\_createNoeud}}
+\index{FDP\_createNoeud@{FDP\_createNoeud}!FileDePriorite.h@{FileDePriorite.h}}
+\doxysubsubsection{\texorpdfstring{FDP\_createNoeud()}{FDP\_createNoeud()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_noeud}{Noeud}}$\ast$ FDP\+\_\+create\+Noeud (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_arbre_huffman}{Arbre\+Huffman}} $\ast$}]{arbre\+Of\+LCA }\end{DoxyParamCaption})}
+
+
+
+Crée un noeud qui contient un arbre et un pointeur vers un autre. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em arbre\+Of\+LCA} & \+: Crée un noeud dans la file, en fixant son champ arbre \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+Noeud$\ast$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_file_de_priorite_8h_aa32b5993744004450840fa9f1d520041}\label{_file_de_priorite_8h_aa32b5993744004450840fa9f1d520041}} 
+\index{FileDePriorite.h@{FileDePriorite.h}!FDP\_defiler@{FDP\_defiler}}
+\index{FDP\_defiler@{FDP\_defiler}!FileDePriorite.h@{FileDePriorite.h}}
+\doxysubsubsection{\texorpdfstring{FDP\_defiler()}{FDP\_defiler()}}
+{\footnotesize\ttfamily void FDP\+\_\+defiler (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_file_de_priorite}{File\+De\+Priorite}} $\ast$}]{file }\end{DoxyParamCaption})}
+
+
+
+Fonction qui va défiler une file. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em fp} & \+: file que l\textquotesingle{}on va defiler \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_file_de_priorite_8h_a0367edebed9ce1024e1a774ea79755e4}\label{_file_de_priorite_8h_a0367edebed9ce1024e1a774ea79755e4}} 
+\index{FileDePriorite.h@{FileDePriorite.h}!FDP\_estVide@{FDP\_estVide}}
+\index{FDP\_estVide@{FDP\_estVide}!FileDePriorite.h@{FileDePriorite.h}}
+\doxysubsubsection{\texorpdfstring{FDP\_estVide()}{FDP\_estVide()}}
+{\footnotesize\ttfamily bool FDP\+\_\+est\+Vide (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_file_de_priorite}{File\+De\+Priorite}} $\ast$}]{fp }\end{DoxyParamCaption})}
+
+
+
+Fonction qui va permettre de verifier si une file est vide ou non. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em fp} & \+: la file \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+bool 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_file_de_priorite_8h_a4498970b54b77d39d1db474fa35f3966}\label{_file_de_priorite_8h_a4498970b54b77d39d1db474fa35f3966}} 
+\index{FileDePriorite.h@{FileDePriorite.h}!FDP\_fileDePriorite@{FDP\_fileDePriorite}}
+\index{FDP\_fileDePriorite@{FDP\_fileDePriorite}!FileDePriorite.h@{FileDePriorite.h}}
+\doxysubsubsection{\texorpdfstring{FDP\_fileDePriorite()}{FDP\_fileDePriorite()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_file_de_priorite}{File\+De\+Priorite}} FDP\+\_\+file\+De\+Priorite (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Permet de creer et initialiser une file. 
+
+\begin{DoxyReturn}{Renvoie}
+\mbox{\hyperlink{struct_file_de_priorite}{File\+De\+Priorite}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_file_de_priorite_8h_a8faca263fc54f136817b5543dcdb495d}\label{_file_de_priorite_8h_a8faca263fc54f136817b5543dcdb495d}} 
+\index{FileDePriorite.h@{FileDePriorite.h}!FDP\_nouvelleFile@{FDP\_nouvelleFile}}
+\index{FDP\_nouvelleFile@{FDP\_nouvelleFile}!FileDePriorite.h@{FileDePriorite.h}}
+\doxysubsubsection{\texorpdfstring{FDP\_nouvelleFile()}{FDP\_nouvelleFile()}}
+{\footnotesize\ttfamily void FDP\+\_\+nouvelle\+File (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_file_de_priorite}{File\+De\+Priorite}} $\ast$}]{file }\end{DoxyParamCaption})}
+
+
+
+Fonction qui fusionne les deux arbres les plus prioritaires d\textquotesingle{}une file. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em file} & \+: file sur laquelle on applique \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_file_de_priorite_8h_a80344bf42b11189be97938df7ca8e9f0}\label{_file_de_priorite_8h_a80344bf42b11189be97938df7ca8e9f0}} 
+\index{FileDePriorite.h@{FileDePriorite.h}!FDP\_obtenirElement@{FDP\_obtenirElement}}
+\index{FDP\_obtenirElement@{FDP\_obtenirElement}!FileDePriorite.h@{FileDePriorite.h}}
+\doxysubsubsection{\texorpdfstring{FDP\_obtenirElement()}{FDP\_obtenirElement()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_arbre_huffman}{Arbre\+Huffman}} FDP\+\_\+obtenir\+Element (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_file_de_priorite}{File\+De\+Priorite}}}]{file,  }\item[{int}]{i }\end{DoxyParamCaption})}
+
+
+
+Fonction qui va permettre d\textquotesingle{}obtenir l\textquotesingle{}ieme element d\textquotesingle{}une file. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em fp} & \+: la file \\
+\hline
+{\em i} & \+: la position de l\textquotesingle{}element que l\textquotesingle{}on souhaite obtenir \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+\mbox{\hyperlink{struct_arbre_huffman}{Arbre\+Huffman}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_file_de_priorite_8h_ab991880c8b9caea0a3533553b6e31f41}\label{_file_de_priorite_8h_ab991880c8b9caea0a3533553b6e31f41}} 
+\index{FileDePriorite.h@{FileDePriorite.h}!trouverIndicePourInsere@{trouverIndicePourInsere}}
+\index{trouverIndicePourInsere@{trouverIndicePourInsere}!FileDePriorite.h@{FileDePriorite.h}}
+\doxysubsubsection{\texorpdfstring{trouverIndicePourInsere()}{trouverIndicePourInsere()}}
+{\footnotesize\ttfamily int trouver\+Indice\+Pour\+Insere (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_arbre_huffman}{Arbre\+Huffman}} $\ast$}]{arbre,  }\item[{\mbox{\hyperlink{struct_file_de_priorite}{File\+De\+Priorite}} $\ast$}]{file }\end{DoxyParamCaption})}
+
+
+
+Permet de trouver l\textquotesingle{}indice du dernier élement plus grand que la ponderation de l\textquotesingle{}arbre qu\textquotesingle{}on veut insérer. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em arbre} & \+: arbre à insérer \\
+\hline
+{\em file} & \+: file à parcourir \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+int 
+\end{DoxyReturn}

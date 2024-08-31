@@ -1,0 +1,136 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Compresseur de Huffman:  Fichier source de include/FileDePriorite.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Compresseur de Huffman
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">FileDePriorite.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_file_de_priorite_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifndef  __FILEDEPRIORITE__</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#define __FILEDEPRIORITE__</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;stdbool.h&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_arbre_huffman_8h.html">ArbreHuffman.h</a>&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="struct_noeud.html">   18</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="struct_noeud.html">Noeud</a> {</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="struct_noeud.html#a4291c716cb75fc37b766eb11adaa8fd8">   19</a></span>&#160;    <a class="code" href="struct_arbre_huffman.html">ArbreHuffman</a> <a class="code" href="struct_noeud.html#a4291c716cb75fc37b766eb11adaa8fd8">arbre</a>;     </div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="struct_noeud.html#a3cd9016cfef3286da554103e0f0b48a0">   20</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="struct_noeud.html">Noeud</a>* <a class="code" href="struct_noeud.html#a3cd9016cfef3286da554103e0f0b48a0">suivant</a>;  </div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="_file_de_priorite_8h.html#a8e9241b13e33c89b710a91795150ede0">   21</a></span>&#160;} <a class="code" href="_file_de_priorite_8h.html#a8e9241b13e33c89b710a91795150ede0">Noeud</a>;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="struct_file_de_priorite.html">   23</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="struct_file_de_priorite.html#a487942abd63989b8faa164477773abab">   24</a></span>&#160;    <a class="code" href="struct_noeud.html">Noeud</a>* <a class="code" href="struct_file_de_priorite.html#a487942abd63989b8faa164477773abab">debut</a>; </div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="struct_file_de_priorite.html#a99c1a2326077453a39e283a1dd9ca73e">   25</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="struct_file_de_priorite.html#a99c1a2326077453a39e283a1dd9ca73e">longueur</a>; </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;} <a class="code" href="struct_file_de_priorite.html">FileDePriorite</a>;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keywordtype">void</span> <a class="code" href="_file_de_priorite_8h.html#a8faca263fc54f136817b5543dcdb495d">FDP_nouvelleFile</a>(<a class="code" href="struct_file_de_priorite.html">FileDePriorite</a>* file);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keywordtype">void</span> <a class="code" href="_file_de_priorite_8h.html#aa32b5993744004450840fa9f1d520041">FDP_defiler</a>(<a class="code" href="struct_file_de_priorite.html">FileDePriorite</a> *fp);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<a class="code" href="struct_arbre_huffman.html">ArbreHuffman</a> <a class="code" href="_file_de_priorite_8h.html#a80344bf42b11189be97938df7ca8e9f0">FDP_obtenirElement</a>(<a class="code" href="struct_file_de_priorite.html">FileDePriorite</a> fp, <span class="keywordtype">int</span> i);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="_file_de_priorite_8h.html#a0367edebed9ce1024e1a774ea79755e4">FDP_estVide</a>(<a class="code" href="struct_file_de_priorite.html">FileDePriorite</a> *fp);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<a class="code" href="struct_file_de_priorite.html">FileDePriorite</a> <a class="code" href="_file_de_priorite_8h.html#a4498970b54b77d39d1db474fa35f3966">FDP_fileDePriorite</a>();</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="keywordtype">void</span> FDP_enfiler(<a class="code" href="struct_file_de_priorite.html">FileDePriorite</a> *file,<a class="code" href="struct_arbre_huffman.html">ArbreHuffman</a>* arbre);</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<a class="code" href="struct_noeud.html">Noeud</a>* <a class="code" href="_file_de_priorite_8h.html#aceb6a6334a9d8c8c8660e0580c1db1dd">FDP_createNoeud</a>(<a class="code" href="struct_arbre_huffman.html">ArbreHuffman</a>* arbreOfLCA);</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="keywordtype">void</span> <a class="code" href="_file_de_priorite_8h.html#a78108e88ee10f953644a635ba42e3ec6">FDP_afficherFileDEPriorite</a>(<a class="code" href="struct_file_de_priorite.html">FileDePriorite</a>* file);</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="comment">//void fixerNoeud(FileDePriorite* file,Noeud* noeud, int position);</span></div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160; </div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="keywordtype">int</span> <a class="code" href="_file_de_priorite_8h.html#ab991880c8b9caea0a3533553b6e31f41">trouverIndicePourInsere</a>(<a class="code" href="struct_arbre_huffman.html">ArbreHuffman</a>* arbre,<a class="code" href="struct_file_de_priorite.html">FileDePriorite</a>* file);</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="a_arbre_huffman_8h_html"><div class="ttname"><a href="_arbre_huffman_8h.html">ArbreHuffman.h</a></div><div class="ttdoc">Implantation du TAD Arbre Huffman pour le Compresseur d'Huffman.</div></div>
+<div class="ttc" id="a_file_de_priorite_8h_html_a0367edebed9ce1024e1a774ea79755e4"><div class="ttname"><a href="_file_de_priorite_8h.html#a0367edebed9ce1024e1a774ea79755e4">FDP_estVide</a></div><div class="ttdeci">bool FDP_estVide(FileDePriorite *fp)</div><div class="ttdoc">Fonction qui va permettre de verifier si une file est vide ou non.</div><div class="ttdef"><b>Definition:</b> FileDePriorite.c:7</div></div>
+<div class="ttc" id="a_file_de_priorite_8h_html_a4498970b54b77d39d1db474fa35f3966"><div class="ttname"><a href="_file_de_priorite_8h.html#a4498970b54b77d39d1db474fa35f3966">FDP_fileDePriorite</a></div><div class="ttdeci">FileDePriorite FDP_fileDePriorite()</div><div class="ttdoc">Permet de creer et initialiser une file.</div><div class="ttdef"><b>Definition:</b> FileDePriorite.c:11</div></div>
+<div class="ttc" id="a_file_de_priorite_8h_html_a78108e88ee10f953644a635ba42e3ec6"><div class="ttname"><a href="_file_de_priorite_8h.html#a78108e88ee10f953644a635ba42e3ec6">FDP_afficherFileDEPriorite</a></div><div class="ttdeci">void FDP_afficherFileDEPriorite(FileDePriorite *file)</div><div class="ttdoc">Affiche la file pour avoir une vision plus pratique et graphique.</div><div class="ttdef"><b>Definition:</b> FileDePriorite.c:49</div></div>
+<div class="ttc" id="a_file_de_priorite_8h_html_a80344bf42b11189be97938df7ca8e9f0"><div class="ttname"><a href="_file_de_priorite_8h.html#a80344bf42b11189be97938df7ca8e9f0">FDP_obtenirElement</a></div><div class="ttdeci">ArbreHuffman FDP_obtenirElement(FileDePriorite fp, int i)</div><div class="ttdoc">Fonction qui va permettre d'obtenir l'ieme element d'une file.</div><div class="ttdef"><b>Definition:</b> FileDePriorite.c:125</div></div>
+<div class="ttc" id="a_file_de_priorite_8h_html_a8e9241b13e33c89b710a91795150ede0"><div class="ttname"><a href="_file_de_priorite_8h.html#a8e9241b13e33c89b710a91795150ede0">Noeud</a></div><div class="ttdeci">struct Noeud Noeud</div><div class="ttdoc">Le type FileDePriorite est un type qui permet de faire une file d'arbre d'Huffman pour les trier.</div></div>
+<div class="ttc" id="a_file_de_priorite_8h_html_a8faca263fc54f136817b5543dcdb495d"><div class="ttname"><a href="_file_de_priorite_8h.html#a8faca263fc54f136817b5543dcdb495d">FDP_nouvelleFile</a></div><div class="ttdeci">void FDP_nouvelleFile(FileDePriorite *file)</div><div class="ttdoc">Fonction qui fusionne les deux arbres les plus prioritaires d'une file.</div><div class="ttdef"><b>Definition:</b> FileDePriorite.c:134</div></div>
+<div class="ttc" id="a_file_de_priorite_8h_html_aa32b5993744004450840fa9f1d520041"><div class="ttname"><a href="_file_de_priorite_8h.html#aa32b5993744004450840fa9f1d520041">FDP_defiler</a></div><div class="ttdeci">void FDP_defiler(FileDePriorite *fp)</div><div class="ttdoc">Fonction qui va défiler une file.</div><div class="ttdef"><b>Definition:</b> FileDePriorite.c:84</div></div>
+<div class="ttc" id="a_file_de_priorite_8h_html_ab991880c8b9caea0a3533553b6e31f41"><div class="ttname"><a href="_file_de_priorite_8h.html#ab991880c8b9caea0a3533553b6e31f41">trouverIndicePourInsere</a></div><div class="ttdeci">int trouverIndicePourInsere(ArbreHuffman *arbre, FileDePriorite *file)</div><div class="ttdoc">Permet de trouver l'indice du dernier élement plus grand que la ponderation de l'arbre qu'on veut ins...</div><div class="ttdef"><b>Definition:</b> FileDePriorite.c:71</div></div>
+<div class="ttc" id="a_file_de_priorite_8h_html_aceb6a6334a9d8c8c8660e0580c1db1dd"><div class="ttname"><a href="_file_de_priorite_8h.html#aceb6a6334a9d8c8c8660e0580c1db1dd">FDP_createNoeud</a></div><div class="ttdeci">Noeud * FDP_createNoeud(ArbreHuffman *arbreOfLCA)</div><div class="ttdoc">Crée un noeud qui contient un arbre et un pointeur vers un autre.</div><div class="ttdef"><b>Definition:</b> FileDePriorite.c:42</div></div>
+<div class="ttc" id="astruct_arbre_huffman_html"><div class="ttname"><a href="struct_arbre_huffman.html">ArbreHuffman</a></div><div class="ttdef"><b>Definition:</b> ArbreHuffman.h:19</div></div>
+<div class="ttc" id="astruct_file_de_priorite_html"><div class="ttname"><a href="struct_file_de_priorite.html">FileDePriorite</a></div><div class="ttdef"><b>Definition:</b> FileDePriorite.h:23</div></div>
+<div class="ttc" id="astruct_file_de_priorite_html_a487942abd63989b8faa164477773abab"><div class="ttname"><a href="struct_file_de_priorite.html#a487942abd63989b8faa164477773abab">FileDePriorite::debut</a></div><div class="ttdeci">Noeud * debut</div><div class="ttdef"><b>Definition:</b> FileDePriorite.h:24</div></div>
+<div class="ttc" id="astruct_file_de_priorite_html_a99c1a2326077453a39e283a1dd9ca73e"><div class="ttname"><a href="struct_file_de_priorite.html#a99c1a2326077453a39e283a1dd9ca73e">FileDePriorite::longueur</a></div><div class="ttdeci">int longueur</div><div class="ttdef"><b>Definition:</b> FileDePriorite.h:25</div></div>
+<div class="ttc" id="astruct_noeud_html"><div class="ttname"><a href="struct_noeud.html">Noeud</a></div><div class="ttdoc">Le type FileDePriorite est un type qui permet de faire une file d'arbre d'Huffman pour les trier.</div><div class="ttdef"><b>Definition:</b> FileDePriorite.h:18</div></div>
+<div class="ttc" id="astruct_noeud_html_a3cd9016cfef3286da554103e0f0b48a0"><div class="ttname"><a href="struct_noeud.html#a3cd9016cfef3286da554103e0f0b48a0">Noeud::suivant</a></div><div class="ttdeci">struct Noeud * suivant</div><div class="ttdef"><b>Definition:</b> FileDePriorite.h:20</div></div>
+<div class="ttc" id="astruct_noeud_html_a4291c716cb75fc37b766eb11adaa8fd8"><div class="ttname"><a href="struct_noeud.html#a4291c716cb75fc37b766eb11adaa8fd8">Noeud::arbre</a></div><div class="ttdeci">ArbreHuffman arbre</div><div class="ttdef"><b>Definition:</b> FileDePriorite.h:19</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré le Lundi 8 Janvier 2024 19:26:31 pour Compresseur de Huffman par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

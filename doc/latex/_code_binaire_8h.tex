@@ -1,0 +1,223 @@
+\hypertarget{_code_binaire_8h}{}\doxysection{Référence du fichier include/\+Code\+Binaire.h}
+\label{_code_binaire_8h}\index{include/CodeBinaire.h@{include/CodeBinaire.h}}
+
+
+Implantation du TAD Code Binaire pour le Compresseur d\textquotesingle{}Huffman.  
+
+
+{\ttfamily \#include $<$stdbool.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}Arbre\+Huffman.\+h\char`\"{}}\newline
+\doxysubsection*{Structures de données}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_code_binaire}{Code\+Binaire}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Énumérations}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{_code_binaire_8h_afa636332d8cd1d6ca643102a5ed11fc4}\label{_code_binaire_8h_afa636332d8cd1d6ca643102a5ed11fc4}} 
+enum \mbox{\hyperlink{_code_binaire_8h_afa636332d8cd1d6ca643102a5ed11fc4}{Bit}} \{ {\bfseries BITA0}
+, {\bfseries BITA1}
+ \}
+\begin{DoxyCompactList}\small\item\em Le type \mbox{\hyperlink{struct_code_binaire}{Code\+Binaire}} permet de donner un code en binaire pour chaque caractere present dans le fichier. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{_code_binaire_8h_a708171c28ea1f7de0ad301a7f01ae25d}{CB\+\_\+est\+Vide}} (\mbox{\hyperlink{struct_code_binaire}{Code\+Binaire}} cb)
+\begin{DoxyCompactList}\small\item\em Fonction qui permet de savoir si un code est vide ou non. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_code_binaire}{Code\+Binaire}} \mbox{\hyperlink{_code_binaire_8h_a196c7549b7bfab7d005c83b3daa1cab3}{CB\+\_\+creer\+Code\+Binaire}} (int taille)
+\begin{DoxyCompactList}\small\item\em Fonction qui creer un code binaire à partir de sa taille. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_code_binaire_8h_a3e6e273a5a7b332b2ce14399462f97d2}{CB\+\_\+liberer\+Code\+Binaire}} (\mbox{\hyperlink{struct_code_binaire}{Code\+Binaire}} $\ast$code)
+\begin{DoxyCompactList}\small\item\em Fonction qui libère un code binaire. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_code_binaire_8h_afa636332d8cd1d6ca643102a5ed11fc4}{Bit}} \mbox{\hyperlink{_code_binaire_8h_a03969cb65920e515c9e449718d53ba88}{CB\+\_\+obtenir\+Ieme\+Bit}} (\mbox{\hyperlink{struct_code_binaire}{Code\+Binaire}} code, int i)
+\begin{DoxyCompactList}\small\item\em Fonction qui permet d\textquotesingle{}obtenir le ieme bit d\textquotesingle{}un code binaire. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_code_binaire}{Code\+Binaire}} \mbox{\hyperlink{_code_binaire_8h_ad4bb35e84be88da94c769dbc43c292a9}{CB\+\_\+concatener}} (const \mbox{\hyperlink{struct_code_binaire}{Code\+Binaire}} $\ast$code1, const \mbox{\hyperlink{struct_code_binaire}{Code\+Binaire}} $\ast$code2)
+\begin{DoxyCompactList}\small\item\em Fonction qui permet de concatener 2 codes binaires. \end{DoxyCompactList}\item 
+char $\ast$ \mbox{\hyperlink{_code_binaire_8h_abac8a6c6ab828364822caafd947b9ec9}{CB\+\_\+code\+Binaire\+To\+Str}} (const \mbox{\hyperlink{struct_code_binaire}{Code\+Binaire}} $\ast$code)
+\begin{DoxyCompactList}\small\item\em Fonction qui permet de convertir un code binaire en chaîne de caractères. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_code_binaire_8h_a7c712ec0c055ed84792db5b608530d68}{CB\+\_\+remplir\+Code\+Binaire}} (\mbox{\hyperlink{struct_code_binaire}{Code\+Binaire}} $\ast$code, const char $\ast$chaine)
+\begin{DoxyCompactList}\small\item\em Fonction qui permet de remplir un code binaire avec une chaîne de caractère. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_code_binaire_8h_abeeb47ab20d492d90c14473b8569db0c}\label{_code_binaire_8h_abeeb47ab20d492d90c14473b8569db0c}} 
+\mbox{\hyperlink{struct_code_binaire}{Code\+Binaire}} {\bfseries CB\+\_\+\+Cb\+From\+AH} (\mbox{\hyperlink{struct_arbre_huffman}{Arbre\+Huffman}} $\ast$a, char car)
+\item 
+char $\ast$ \mbox{\hyperlink{_code_binaire_8h_a51216f82f75a6fcf8483fa3d3c4bd9b2}{AH\+\_\+obtenir\+Code\+Binaire}} (\mbox{\hyperlink{struct_arbre_huffman}{Arbre\+Huffman}} $\ast$a, char car)
+\begin{DoxyCompactList}\small\item\em Fonction qui permet de trouver la chaine de caractere qui va être convertie en code binaire par AH\+\_\+\+Cb\+From\+AH. \end{DoxyCompactList}\item 
+char $\ast$ \mbox{\hyperlink{_code_binaire_8h_aa0bca687a224b9011272b8c97c43caa1}{obtenir\+Code\+BinaireR}} (\mbox{\hyperlink{struct_arbre_huffman}{Arbre\+Huffman}} $\ast$a, char car)
+\begin{DoxyCompactList}\small\item\em Fonction récursive qui va permettre d\textquotesingle{}avoir le code binaire d\textquotesingle{}un caractere et qui va être appelé dans AH\+\_\+obtenir\+Code\+Binaire. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+Implantation du TAD Code Binaire pour le Compresseur d\textquotesingle{}Huffman. 
+
+\begin{DoxyAuthor}{Auteur}
+A. El Faïq, T. Barsot, W. Vilayvong, E. Lefeuvre 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Documentation des fonctions}
+\mbox{\Hypertarget{_code_binaire_8h_a51216f82f75a6fcf8483fa3d3c4bd9b2}\label{_code_binaire_8h_a51216f82f75a6fcf8483fa3d3c4bd9b2}} 
+\index{CodeBinaire.h@{CodeBinaire.h}!AH\_obtenirCodeBinaire@{AH\_obtenirCodeBinaire}}
+\index{AH\_obtenirCodeBinaire@{AH\_obtenirCodeBinaire}!CodeBinaire.h@{CodeBinaire.h}}
+\doxysubsubsection{\texorpdfstring{AH\_obtenirCodeBinaire()}{AH\_obtenirCodeBinaire()}}
+{\footnotesize\ttfamily char$\ast$ AH\+\_\+obtenir\+Code\+Binaire (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_arbre_huffman}{Arbre\+Huffman}} $\ast$}]{a,  }\item[{char}]{car }\end{DoxyParamCaption})}
+
+
+
+Fonction qui permet de trouver la chaine de caractere qui va être convertie en code binaire par AH\+\_\+\+Cb\+From\+AH. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em a} & \+: l\textquotesingle{}arbre \\
+\hline
+{\em car} & \+: le caractere dont on veut calculer le code \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+char$\ast$ (la chaîne de caractère) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_code_binaire_8h_abac8a6c6ab828364822caafd947b9ec9}\label{_code_binaire_8h_abac8a6c6ab828364822caafd947b9ec9}} 
+\index{CodeBinaire.h@{CodeBinaire.h}!CB\_codeBinaireToStr@{CB\_codeBinaireToStr}}
+\index{CB\_codeBinaireToStr@{CB\_codeBinaireToStr}!CodeBinaire.h@{CodeBinaire.h}}
+\doxysubsubsection{\texorpdfstring{CB\_codeBinaireToStr()}{CB\_codeBinaireToStr()}}
+{\footnotesize\ttfamily char$\ast$ CB\+\_\+code\+Binaire\+To\+Str (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_code_binaire}{Code\+Binaire}} $\ast$}]{code }\end{DoxyParamCaption})}
+
+
+
+Fonction qui permet de convertir un code binaire en chaîne de caractères. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em code} & \+: le code \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+char$\ast$ (la chaîne de caractère) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_code_binaire_8h_ad4bb35e84be88da94c769dbc43c292a9}\label{_code_binaire_8h_ad4bb35e84be88da94c769dbc43c292a9}} 
+\index{CodeBinaire.h@{CodeBinaire.h}!CB\_concatener@{CB\_concatener}}
+\index{CB\_concatener@{CB\_concatener}!CodeBinaire.h@{CodeBinaire.h}}
+\doxysubsubsection{\texorpdfstring{CB\_concatener()}{CB\_concatener()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_code_binaire}{Code\+Binaire}} CB\+\_\+concatener (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_code_binaire}{Code\+Binaire}} $\ast$}]{code1,  }\item[{const \mbox{\hyperlink{struct_code_binaire}{Code\+Binaire}} $\ast$}]{code2 }\end{DoxyParamCaption})}
+
+
+
+Fonction qui permet de concatener 2 codes binaires. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em code1} & \+: le 1er code \\
+\hline
+{\em code2} & \+: la 2nd code \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+\mbox{\hyperlink{struct_code_binaire}{Code\+Binaire}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_code_binaire_8h_a196c7549b7bfab7d005c83b3daa1cab3}\label{_code_binaire_8h_a196c7549b7bfab7d005c83b3daa1cab3}} 
+\index{CodeBinaire.h@{CodeBinaire.h}!CB\_creerCodeBinaire@{CB\_creerCodeBinaire}}
+\index{CB\_creerCodeBinaire@{CB\_creerCodeBinaire}!CodeBinaire.h@{CodeBinaire.h}}
+\doxysubsubsection{\texorpdfstring{CB\_creerCodeBinaire()}{CB\_creerCodeBinaire()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_code_binaire}{Code\+Binaire}} CB\+\_\+creer\+Code\+Binaire (\begin{DoxyParamCaption}\item[{int}]{taille }\end{DoxyParamCaption})}
+
+
+
+Fonction qui creer un code binaire à partir de sa taille. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em taille} & \+: le nombre de bits \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+\mbox{\hyperlink{struct_code_binaire}{Code\+Binaire}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_code_binaire_8h_a708171c28ea1f7de0ad301a7f01ae25d}\label{_code_binaire_8h_a708171c28ea1f7de0ad301a7f01ae25d}} 
+\index{CodeBinaire.h@{CodeBinaire.h}!CB\_estVide@{CB\_estVide}}
+\index{CB\_estVide@{CB\_estVide}!CodeBinaire.h@{CodeBinaire.h}}
+\doxysubsubsection{\texorpdfstring{CB\_estVide()}{CB\_estVide()}}
+{\footnotesize\ttfamily bool CB\+\_\+est\+Vide (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_code_binaire}{Code\+Binaire}}}]{cb }\end{DoxyParamCaption})}
+
+
+
+Fonction qui permet de savoir si un code est vide ou non. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em cb} & \+: le code binaire \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+bool 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_code_binaire_8h_a3e6e273a5a7b332b2ce14399462f97d2}\label{_code_binaire_8h_a3e6e273a5a7b332b2ce14399462f97d2}} 
+\index{CodeBinaire.h@{CodeBinaire.h}!CB\_libererCodeBinaire@{CB\_libererCodeBinaire}}
+\index{CB\_libererCodeBinaire@{CB\_libererCodeBinaire}!CodeBinaire.h@{CodeBinaire.h}}
+\doxysubsubsection{\texorpdfstring{CB\_libererCodeBinaire()}{CB\_libererCodeBinaire()}}
+{\footnotesize\ttfamily void CB\+\_\+liberer\+Code\+Binaire (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_code_binaire}{Code\+Binaire}} $\ast$}]{code }\end{DoxyParamCaption})}
+
+
+
+Fonction qui libère un code binaire. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em code} & \+: le code à liberer \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_code_binaire_8h_a03969cb65920e515c9e449718d53ba88}\label{_code_binaire_8h_a03969cb65920e515c9e449718d53ba88}} 
+\index{CodeBinaire.h@{CodeBinaire.h}!CB\_obtenirIemeBit@{CB\_obtenirIemeBit}}
+\index{CB\_obtenirIemeBit@{CB\_obtenirIemeBit}!CodeBinaire.h@{CodeBinaire.h}}
+\doxysubsubsection{\texorpdfstring{CB\_obtenirIemeBit()}{CB\_obtenirIemeBit()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_code_binaire_8h_afa636332d8cd1d6ca643102a5ed11fc4}{Bit}} CB\+\_\+obtenir\+Ieme\+Bit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_code_binaire}{Code\+Binaire}}}]{code,  }\item[{int}]{i }\end{DoxyParamCaption})}
+
+
+
+Fonction qui permet d\textquotesingle{}obtenir le ieme bit d\textquotesingle{}un code binaire. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em code} & \+: le code \\
+\hline
+{\em i} & \+: la position du bit à obtenir \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+Bit 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_code_binaire_8h_a7c712ec0c055ed84792db5b608530d68}\label{_code_binaire_8h_a7c712ec0c055ed84792db5b608530d68}} 
+\index{CodeBinaire.h@{CodeBinaire.h}!CB\_remplirCodeBinaire@{CB\_remplirCodeBinaire}}
+\index{CB\_remplirCodeBinaire@{CB\_remplirCodeBinaire}!CodeBinaire.h@{CodeBinaire.h}}
+\doxysubsubsection{\texorpdfstring{CB\_remplirCodeBinaire()}{CB\_remplirCodeBinaire()}}
+{\footnotesize\ttfamily void CB\+\_\+remplir\+Code\+Binaire (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_code_binaire}{Code\+Binaire}} $\ast$}]{code,  }\item[{const char $\ast$}]{chaine }\end{DoxyParamCaption})}
+
+
+
+Fonction qui permet de remplir un code binaire avec une chaîne de caractère. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em code} & \+: le code à remplir \\
+\hline
+{\em chaine} & \+: la chaine que le veut mettre dans le code binaire \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_code_binaire_8h_aa0bca687a224b9011272b8c97c43caa1}\label{_code_binaire_8h_aa0bca687a224b9011272b8c97c43caa1}} 
+\index{CodeBinaire.h@{CodeBinaire.h}!obtenirCodeBinaireR@{obtenirCodeBinaireR}}
+\index{obtenirCodeBinaireR@{obtenirCodeBinaireR}!CodeBinaire.h@{CodeBinaire.h}}
+\doxysubsubsection{\texorpdfstring{obtenirCodeBinaireR()}{obtenirCodeBinaireR()}}
+{\footnotesize\ttfamily char$\ast$ obtenir\+Code\+BinaireR (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_arbre_huffman}{Arbre\+Huffman}} $\ast$}]{a,  }\item[{char}]{car }\end{DoxyParamCaption})}
+
+
+
+Fonction récursive qui va permettre d\textquotesingle{}avoir le code binaire d\textquotesingle{}un caractere et qui va être appelé dans AH\+\_\+obtenir\+Code\+Binaire. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em a} & \+: l\textquotesingle{}arbre \\
+\hline
+{\em car} & \+: le caractere dont on veut calculer le code \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+char$\ast$ (la chaîne de caractère) 
+\end{DoxyReturn}

@@ -1,0 +1,128 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Compresseur de Huffman:  Fichier source de include/TableDeCodage.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Compresseur de Huffman
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">TableDeCodage.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_table_de_codage_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifndef __TABLEDECODAGE__</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#define __TABLEDECODAGE__</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_code_binaire_8h.html">CodeBinaire.h</a>&quot;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_arbre_huffman_8h.html">ArbreHuffman.h</a>&quot;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="struct_ligne.html">   18</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="struct_ligne.html">Ligne</a>{</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="struct_ligne.html#abf6acaee74b03b1f139a0845182afc72">   19</a></span>&#160;    <a class="code" href="struct_code_binaire.html">CodeBinaire</a> <a class="code" href="struct_ligne.html#abf6acaee74b03b1f139a0845182afc72">code</a>; </div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="struct_ligne.html#adc08ed1554f35803d229aeaf11216b3f">   20</a></span>&#160;    <span class="keywordtype">char</span> <a class="code" href="struct_ligne.html#adc08ed1554f35803d229aeaf11216b3f">c</a>; </div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="struct_ligne.html#aad226ea01cf4c203592a7b4b86e1b131">   21</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="struct_ligne.html">Ligne</a>* <a class="code" href="struct_ligne.html#aad226ea01cf4c203592a7b4b86e1b131">listeSuivante</a>; </div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="_table_de_codage_8h.html#a0af22f7d3d9ef41a6243759bf82678ef">   22</a></span>&#160;} <a class="code" href="_table_de_codage_8h.html#a0af22f7d3d9ef41a6243759bf82678ef">Ligne</a>;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="struct_table_de_codage.html">   24</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="struct_table_de_codage.html#a6c472e19933c84bb7d8fed7690a082a8">   25</a></span>&#160;    <a class="code" href="struct_ligne.html">Ligne</a>* <a class="code" href="struct_table_de_codage.html#a6c472e19933c84bb7d8fed7690a082a8">ligne</a>; </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;} <a class="code" href="struct_table_de_codage.html">TableDeCodage</a>;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<a class="code" href="struct_table_de_codage.html">TableDeCodage</a>* TDC_obtenirTableDeCodage();</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<a class="code" href="struct_code_binaire.html">CodeBinaire</a>* <a class="code" href="_table_de_codage_8h.html#acabfb9eee1b9c5a863970c57df3e322f">TDC_obtenirCode</a>(<a class="code" href="struct_table_de_codage.html">TableDeCodage</a> tab,<span class="keywordtype">char</span> c);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keywordtype">char</span> <a class="code" href="_table_de_codage_8h.html#abf5a5495c0c58161cc15b8ee7190b171">TDC_obtenirCarac</a>(<a class="code" href="struct_table_de_codage.html">TableDeCodage</a> tab,<a class="code" href="struct_code_binaire.html">CodeBinaire</a> code);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="keywordtype">void</span> TDC_ajouter(<a class="code" href="struct_table_de_codage.html">TableDeCodage</a> *tab,<span class="keywordtype">char</span> c,<a class="code" href="struct_code_binaire.html">CodeBinaire</a> *code);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="keywordtype">void</span> <a class="code" href="_table_de_codage_8h.html#ad296626615ff5bbe5d49f37f3eb8181d">TDC_supprimer</a>(<a class="code" href="struct_table_de_codage.html">TableDeCodage</a> *tab, <span class="keywordtype">char</span> *c, <a class="code" href="struct_code_binaire.html">CodeBinaire</a> *code);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="keywordtype">int</span> <a class="code" href="_table_de_codage_8h.html#a0328fc07b521b034e7aee4a91aee44b9">TDC_estPresent</a>(<a class="code" href="struct_table_de_codage.html">TableDeCodage</a> tab,<span class="keywordtype">char</span> c);</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="_table_de_codage_8h.html#a619f043a685530c948f39702159105f8">TDC_estVide</a>(<a class="code" href="struct_table_de_codage.html">TableDeCodage</a> tab);</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="keywordtype">char</span>* TDC_afficherTdc(<a class="code" href="struct_table_de_codage.html">TableDeCodage</a>* tdc);</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="a_arbre_huffman_8h_html"><div class="ttname"><a href="_arbre_huffman_8h.html">ArbreHuffman.h</a></div><div class="ttdoc">Implantation du TAD Arbre Huffman pour le Compresseur d'Huffman.</div></div>
+<div class="ttc" id="a_code_binaire_8h_html"><div class="ttname"><a href="_code_binaire_8h.html">CodeBinaire.h</a></div><div class="ttdoc">Implantation du TAD Code Binaire pour le Compresseur d'Huffman.</div></div>
+<div class="ttc" id="a_table_de_codage_8h_html_a0328fc07b521b034e7aee4a91aee44b9"><div class="ttname"><a href="_table_de_codage_8h.html#a0328fc07b521b034e7aee4a91aee44b9">TDC_estPresent</a></div><div class="ttdeci">int TDC_estPresent(TableDeCodage tab, char c)</div><div class="ttdoc">Fonction qui permet de savoir si un caractere est present dans une table de codage.</div><div class="ttdef"><b>Definition:</b> TableDeCodage.c:66</div></div>
+<div class="ttc" id="a_table_de_codage_8h_html_a0af22f7d3d9ef41a6243759bf82678ef"><div class="ttname"><a href="_table_de_codage_8h.html#a0af22f7d3d9ef41a6243759bf82678ef">Ligne</a></div><div class="ttdeci">struct Ligne Ligne</div><div class="ttdoc">Le type TableDeCodage permet de faire un tableau avec les caracteres et leur code binaire associé</div></div>
+<div class="ttc" id="a_table_de_codage_8h_html_a619f043a685530c948f39702159105f8"><div class="ttname"><a href="_table_de_codage_8h.html#a619f043a685530c948f39702159105f8">TDC_estVide</a></div><div class="ttdeci">bool TDC_estVide(TableDeCodage tab)</div><div class="ttdoc">Fonction qui permet de savoir si une table de codage est vide ou non.</div><div class="ttdef"><b>Definition:</b> TableDeCodage.c:80</div></div>
+<div class="ttc" id="a_table_de_codage_8h_html_abf5a5495c0c58161cc15b8ee7190b171"><div class="ttname"><a href="_table_de_codage_8h.html#abf5a5495c0c58161cc15b8ee7190b171">TDC_obtenirCarac</a></div><div class="ttdeci">char TDC_obtenirCarac(TableDeCodage tab, CodeBinaire code)</div><div class="ttdoc">Fonction qui permet d'obtenir le caractere à partir d'une table de codage et d'un code binaire.</div><div class="ttdef"><b>Definition:</b> TableDeCodage.c:25</div></div>
+<div class="ttc" id="a_table_de_codage_8h_html_acabfb9eee1b9c5a863970c57df3e322f"><div class="ttname"><a href="_table_de_codage_8h.html#acabfb9eee1b9c5a863970c57df3e322f">TDC_obtenirCode</a></div><div class="ttdeci">CodeBinaire * TDC_obtenirCode(TableDeCodage tab, char c)</div><div class="ttdoc">Fonction qui permet d'obtenir le code binaire d'un caractere à partir d'une table de codage.</div><div class="ttdef"><b>Definition:</b> TableDeCodage.c:14</div></div>
+<div class="ttc" id="a_table_de_codage_8h_html_ad296626615ff5bbe5d49f37f3eb8181d"><div class="ttname"><a href="_table_de_codage_8h.html#ad296626615ff5bbe5d49f37f3eb8181d">TDC_supprimer</a></div><div class="ttdeci">void TDC_supprimer(TableDeCodage *tab, char *c, CodeBinaire *code)</div><div class="ttdoc">Fonction qui permet de supprimer une ligne (caractere + code binaire) dans la table de codage.</div><div class="ttdef"><b>Definition:</b> TableDeCodage.c:49</div></div>
+<div class="ttc" id="astruct_code_binaire_html"><div class="ttname"><a href="struct_code_binaire.html">CodeBinaire</a></div><div class="ttdef"><b>Definition:</b> CodeBinaire.h:19</div></div>
+<div class="ttc" id="astruct_ligne_html"><div class="ttname"><a href="struct_ligne.html">Ligne</a></div><div class="ttdoc">Le type TableDeCodage permet de faire un tableau avec les caracteres et leur code binaire associé</div><div class="ttdef"><b>Definition:</b> TableDeCodage.h:18</div></div>
+<div class="ttc" id="astruct_ligne_html_aad226ea01cf4c203592a7b4b86e1b131"><div class="ttname"><a href="struct_ligne.html#aad226ea01cf4c203592a7b4b86e1b131">Ligne::listeSuivante</a></div><div class="ttdeci">struct Ligne * listeSuivante</div><div class="ttdef"><b>Definition:</b> TableDeCodage.h:21</div></div>
+<div class="ttc" id="astruct_ligne_html_abf6acaee74b03b1f139a0845182afc72"><div class="ttname"><a href="struct_ligne.html#abf6acaee74b03b1f139a0845182afc72">Ligne::code</a></div><div class="ttdeci">CodeBinaire code</div><div class="ttdef"><b>Definition:</b> TableDeCodage.h:19</div></div>
+<div class="ttc" id="astruct_ligne_html_adc08ed1554f35803d229aeaf11216b3f"><div class="ttname"><a href="struct_ligne.html#adc08ed1554f35803d229aeaf11216b3f">Ligne::c</a></div><div class="ttdeci">char c</div><div class="ttdef"><b>Definition:</b> TableDeCodage.h:20</div></div>
+<div class="ttc" id="astruct_table_de_codage_html"><div class="ttname"><a href="struct_table_de_codage.html">TableDeCodage</a></div><div class="ttdef"><b>Definition:</b> TableDeCodage.h:24</div></div>
+<div class="ttc" id="astruct_table_de_codage_html_a6c472e19933c84bb7d8fed7690a082a8"><div class="ttname"><a href="struct_table_de_codage.html#a6c472e19933c84bb7d8fed7690a082a8">TableDeCodage::ligne</a></div><div class="ttdeci">Ligne * ligne</div><div class="ttdef"><b>Definition:</b> TableDeCodage.h:25</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré le Lundi 8 Janvier 2024 19:26:31 pour Compresseur de Huffman par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

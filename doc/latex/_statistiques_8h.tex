@@ -1,0 +1,88 @@
+\hypertarget{_statistiques_8h}{}\doxysection{Référence du fichier include/\+Statistiques.h}
+\label{_statistiques_8h}\index{include/Statistiques.h@{include/Statistiques.h}}
+
+
+Implantation du TAD \mbox{\hyperlink{struct_statistiques}{Statistiques}} pour le Compresseur d\textquotesingle{}Huffman.  
+
+
+\doxysubsection*{Structures de données}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_statistiques}{Statistiques}}
+\begin{DoxyCompactList}\small\item\em Le type \mbox{\hyperlink{struct_statistiques}{Statistiques}} permet de donner le nombre d\textquotesingle{}occurences d\textquotesingle{}un caractere dans un fichier. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_statistiques}{Statistiques}} \mbox{\hyperlink{_statistiques_8h_accf763d843799ef6e3445e70c733f262}{S\+\_\+statistique}} (char caracter, int ponderation)
+\begin{DoxyCompactList}\small\item\em Fonction qui permet de creer une statistique à partir d\textquotesingle{}un caractere et de son nombre d\textquotesingle{}occurences. \end{DoxyCompactList}\item 
+char \mbox{\hyperlink{_statistiques_8h_abb54ac4ca6692a423bdcd328bada9ca9}{S\+\_\+obtenir\+Caractere}} (\mbox{\hyperlink{struct_statistiques}{Statistiques}} stat)
+\begin{DoxyCompactList}\small\item\em Fonction qui permet d\textquotesingle{}obtenir un caractere à partir d\textquotesingle{}une statistique. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{_statistiques_8h_a7b26776548204c97ca1b1ad46eabcae5}{S\+\_\+obtenir\+Ponderation}} (\mbox{\hyperlink{struct_statistiques}{Statistiques}} stat)
+\begin{DoxyCompactList}\small\item\em Fonction qui permet d\textquotesingle{}obtenir la pondération d\textquotesingle{}un caractere à partir d\textquotesingle{}une statistique. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+Implantation du TAD \mbox{\hyperlink{struct_statistiques}{Statistiques}} pour le Compresseur d\textquotesingle{}Huffman. 
+
+\begin{DoxyAuthor}{Auteur}
+A. El Faïq, T. Barsot, W. Vilayvong, E. Lefeuvre 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Documentation des fonctions}
+\mbox{\Hypertarget{_statistiques_8h_abb54ac4ca6692a423bdcd328bada9ca9}\label{_statistiques_8h_abb54ac4ca6692a423bdcd328bada9ca9}} 
+\index{Statistiques.h@{Statistiques.h}!S\_obtenirCaractere@{S\_obtenirCaractere}}
+\index{S\_obtenirCaractere@{S\_obtenirCaractere}!Statistiques.h@{Statistiques.h}}
+\doxysubsubsection{\texorpdfstring{S\_obtenirCaractere()}{S\_obtenirCaractere()}}
+{\footnotesize\ttfamily char S\+\_\+obtenir\+Caractere (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_statistiques}{Statistiques}}}]{stat }\end{DoxyParamCaption})}
+
+
+
+Fonction qui permet d\textquotesingle{}obtenir un caractere à partir d\textquotesingle{}une statistique. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em stat} & \+: la statistique \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+char 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_statistiques_8h_a7b26776548204c97ca1b1ad46eabcae5}\label{_statistiques_8h_a7b26776548204c97ca1b1ad46eabcae5}} 
+\index{Statistiques.h@{Statistiques.h}!S\_obtenirPonderation@{S\_obtenirPonderation}}
+\index{S\_obtenirPonderation@{S\_obtenirPonderation}!Statistiques.h@{Statistiques.h}}
+\doxysubsubsection{\texorpdfstring{S\_obtenirPonderation()}{S\_obtenirPonderation()}}
+{\footnotesize\ttfamily int S\+\_\+obtenir\+Ponderation (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_statistiques}{Statistiques}}}]{stat }\end{DoxyParamCaption})}
+
+
+
+Fonction qui permet d\textquotesingle{}obtenir la pondération d\textquotesingle{}un caractere à partir d\textquotesingle{}une statistique. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em stat} & \+: la statistique \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_statistiques_8h_accf763d843799ef6e3445e70c733f262}\label{_statistiques_8h_accf763d843799ef6e3445e70c733f262}} 
+\index{Statistiques.h@{Statistiques.h}!S\_statistique@{S\_statistique}}
+\index{S\_statistique@{S\_statistique}!Statistiques.h@{Statistiques.h}}
+\doxysubsubsection{\texorpdfstring{S\_statistique()}{S\_statistique()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_statistiques}{Statistiques}} S\+\_\+statistique (\begin{DoxyParamCaption}\item[{char}]{c,  }\item[{int}]{n }\end{DoxyParamCaption})}
+
+
+
+Fonction qui permet de creer une statistique à partir d\textquotesingle{}un caractere et de son nombre d\textquotesingle{}occurences. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em char} & \+: le caractère \\
+\hline
+{\em int} & \+: le nombre d\textquotesingle{}occurences \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+\mbox{\hyperlink{struct_statistiques}{Statistiques}} 
+\end{DoxyReturn}

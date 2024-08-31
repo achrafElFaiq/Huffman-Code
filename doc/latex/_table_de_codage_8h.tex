@@ -1,0 +1,152 @@
+\hypertarget{_table_de_codage_8h}{}\doxysection{Référence du fichier include/\+Table\+De\+Codage.h}
+\label{_table_de_codage_8h}\index{include/TableDeCodage.h@{include/TableDeCodage.h}}
+
+
+Implantation du TAD \mbox{\hyperlink{struct_table_de_codage}{Table\+De\+Codage}} pour le Compresseur d\textquotesingle{}Huffman.  
+
+
+{\ttfamily \#include \char`\"{}Code\+Binaire.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Arbre\+Huffman.\+h\char`\"{}}\newline
+\doxysubsection*{Structures de données}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_ligne}{Ligne}}
+\begin{DoxyCompactList}\small\item\em Le type \mbox{\hyperlink{struct_table_de_codage}{Table\+De\+Codage}} permet de faire un tableau avec les caracteres et leur code binaire associé \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_table_de_codage}{Table\+De\+Codage}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Définitions de type}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{_table_de_codage_8h_a0af22f7d3d9ef41a6243759bf82678ef}\label{_table_de_codage_8h_a0af22f7d3d9ef41a6243759bf82678ef}} 
+typedef struct \mbox{\hyperlink{struct_ligne}{Ligne}} \mbox{\hyperlink{_table_de_codage_8h_a0af22f7d3d9ef41a6243759bf82678ef}{Ligne}}
+\begin{DoxyCompactList}\small\item\em Le type \mbox{\hyperlink{struct_table_de_codage}{Table\+De\+Codage}} permet de faire un tableau avec les caracteres et leur code binaire associé \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{_table_de_codage_8h_aaf4ff35874ca8af9283a3e67fb796965}\label{_table_de_codage_8h_aaf4ff35874ca8af9283a3e67fb796965}} 
+\mbox{\hyperlink{struct_table_de_codage}{Table\+De\+Codage}} $\ast$ {\bfseries TDC\+\_\+obtenir\+Table\+De\+Codage} ()
+\item 
+\mbox{\hyperlink{struct_code_binaire}{Code\+Binaire}} $\ast$ \mbox{\hyperlink{_table_de_codage_8h_acabfb9eee1b9c5a863970c57df3e322f}{TDC\+\_\+obtenir\+Code}} (\mbox{\hyperlink{struct_table_de_codage}{Table\+De\+Codage}} tab, char c)
+\begin{DoxyCompactList}\small\item\em Fonction qui permet d\textquotesingle{}obtenir le code binaire d\textquotesingle{}un caractere à partir d\textquotesingle{}une table de codage. \end{DoxyCompactList}\item 
+char \mbox{\hyperlink{_table_de_codage_8h_abf5a5495c0c58161cc15b8ee7190b171}{TDC\+\_\+obtenir\+Carac}} (\mbox{\hyperlink{struct_table_de_codage}{Table\+De\+Codage}} tab, \mbox{\hyperlink{struct_code_binaire}{Code\+Binaire}} code)
+\begin{DoxyCompactList}\small\item\em Fonction qui permet d\textquotesingle{}obtenir le caractere à partir d\textquotesingle{}une table de codage et d\textquotesingle{}un code binaire. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_table_de_codage_8h_a5299a796dbfda6d390c6069a91d58358}\label{_table_de_codage_8h_a5299a796dbfda6d390c6069a91d58358}} 
+void {\bfseries TDC\+\_\+ajouter} (\mbox{\hyperlink{struct_table_de_codage}{Table\+De\+Codage}} $\ast$tab, char c, \mbox{\hyperlink{struct_code_binaire}{Code\+Binaire}} $\ast$code)
+\item 
+void \mbox{\hyperlink{_table_de_codage_8h_ad296626615ff5bbe5d49f37f3eb8181d}{TDC\+\_\+supprimer}} (\mbox{\hyperlink{struct_table_de_codage}{Table\+De\+Codage}} $\ast$tab, char $\ast$c, \mbox{\hyperlink{struct_code_binaire}{Code\+Binaire}} $\ast$code)
+\begin{DoxyCompactList}\small\item\em Fonction qui permet de supprimer une ligne (caractere + code binaire) dans la table de codage. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{_table_de_codage_8h_a0328fc07b521b034e7aee4a91aee44b9}{TDC\+\_\+est\+Present}} (\mbox{\hyperlink{struct_table_de_codage}{Table\+De\+Codage}} tab, char c)
+\begin{DoxyCompactList}\small\item\em Fonction qui permet de savoir si un caractere est present dans une table de codage. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{_table_de_codage_8h_a619f043a685530c948f39702159105f8}{TDC\+\_\+est\+Vide}} (\mbox{\hyperlink{struct_table_de_codage}{Table\+De\+Codage}} tab)
+\begin{DoxyCompactList}\small\item\em Fonction qui permet de savoir si une table de codage est vide ou non. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_table_de_codage_8h_a564e5406b078d637241e065823901103}\label{_table_de_codage_8h_a564e5406b078d637241e065823901103}} 
+char $\ast$ {\bfseries TDC\+\_\+afficher\+Tdc} (\mbox{\hyperlink{struct_table_de_codage}{Table\+De\+Codage}} $\ast$tdc)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+Implantation du TAD \mbox{\hyperlink{struct_table_de_codage}{Table\+De\+Codage}} pour le Compresseur d\textquotesingle{}Huffman. 
+
+\begin{DoxyAuthor}{Auteur}
+A. El Faïq, T. Barsot, W. Vilayvong 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Documentation des fonctions}
+\mbox{\Hypertarget{_table_de_codage_8h_a0328fc07b521b034e7aee4a91aee44b9}\label{_table_de_codage_8h_a0328fc07b521b034e7aee4a91aee44b9}} 
+\index{TableDeCodage.h@{TableDeCodage.h}!TDC\_estPresent@{TDC\_estPresent}}
+\index{TDC\_estPresent@{TDC\_estPresent}!TableDeCodage.h@{TableDeCodage.h}}
+\doxysubsubsection{\texorpdfstring{TDC\_estPresent()}{TDC\_estPresent()}}
+{\footnotesize\ttfamily int TDC\+\_\+est\+Present (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_table_de_codage}{Table\+De\+Codage}}}]{tab,  }\item[{char}]{car }\end{DoxyParamCaption})}
+
+
+
+Fonction qui permet de savoir si un caractere est present dans une table de codage. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em tab} & \+: la table de codage \\
+\hline
+{\em c} & \+: le caractere que l\textquotesingle{}on cherche \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+int (0 si faux 1 si vrai) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_table_de_codage_8h_a619f043a685530c948f39702159105f8}\label{_table_de_codage_8h_a619f043a685530c948f39702159105f8}} 
+\index{TableDeCodage.h@{TableDeCodage.h}!TDC\_estVide@{TDC\_estVide}}
+\index{TDC\_estVide@{TDC\_estVide}!TableDeCodage.h@{TableDeCodage.h}}
+\doxysubsubsection{\texorpdfstring{TDC\_estVide()}{TDC\_estVide()}}
+{\footnotesize\ttfamily bool TDC\+\_\+est\+Vide (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_table_de_codage}{Table\+De\+Codage}}}]{tab }\end{DoxyParamCaption})}
+
+
+
+Fonction qui permet de savoir si une table de codage est vide ou non. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em tab} & \+: la table de codage \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+bool 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_table_de_codage_8h_abf5a5495c0c58161cc15b8ee7190b171}\label{_table_de_codage_8h_abf5a5495c0c58161cc15b8ee7190b171}} 
+\index{TableDeCodage.h@{TableDeCodage.h}!TDC\_obtenirCarac@{TDC\_obtenirCarac}}
+\index{TDC\_obtenirCarac@{TDC\_obtenirCarac}!TableDeCodage.h@{TableDeCodage.h}}
+\doxysubsubsection{\texorpdfstring{TDC\_obtenirCarac()}{TDC\_obtenirCarac()}}
+{\footnotesize\ttfamily char TDC\+\_\+obtenir\+Carac (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_table_de_codage}{Table\+De\+Codage}}}]{tab,  }\item[{\mbox{\hyperlink{struct_code_binaire}{Code\+Binaire}}}]{code }\end{DoxyParamCaption})}
+
+
+
+Fonction qui permet d\textquotesingle{}obtenir le caractere à partir d\textquotesingle{}une table de codage et d\textquotesingle{}un code binaire. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em tab} & \+: la table de codage \\
+\hline
+{\em code} & \+: le code binaire \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+char 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_table_de_codage_8h_acabfb9eee1b9c5a863970c57df3e322f}\label{_table_de_codage_8h_acabfb9eee1b9c5a863970c57df3e322f}} 
+\index{TableDeCodage.h@{TableDeCodage.h}!TDC\_obtenirCode@{TDC\_obtenirCode}}
+\index{TDC\_obtenirCode@{TDC\_obtenirCode}!TableDeCodage.h@{TableDeCodage.h}}
+\doxysubsubsection{\texorpdfstring{TDC\_obtenirCode()}{TDC\_obtenirCode()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_code_binaire}{Code\+Binaire}}$\ast$ TDC\+\_\+obtenir\+Code (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_table_de_codage}{Table\+De\+Codage}}}]{tab,  }\item[{char}]{c }\end{DoxyParamCaption})}
+
+
+
+Fonction qui permet d\textquotesingle{}obtenir le code binaire d\textquotesingle{}un caractere à partir d\textquotesingle{}une table de codage. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em tab} & \+: la table de codage \\
+\hline
+{\em c} & \+: le caractere dont on cherche le code binaire \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+\mbox{\hyperlink{struct_code_binaire}{Code\+Binaire}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_table_de_codage_8h_ad296626615ff5bbe5d49f37f3eb8181d}\label{_table_de_codage_8h_ad296626615ff5bbe5d49f37f3eb8181d}} 
+\index{TableDeCodage.h@{TableDeCodage.h}!TDC\_supprimer@{TDC\_supprimer}}
+\index{TDC\_supprimer@{TDC\_supprimer}!TableDeCodage.h@{TableDeCodage.h}}
+\doxysubsubsection{\texorpdfstring{TDC\_supprimer()}{TDC\_supprimer()}}
+{\footnotesize\ttfamily void TDC\+\_\+supprimer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_table_de_codage}{Table\+De\+Codage}} $\ast$}]{tab,  }\item[{char $\ast$}]{c,  }\item[{\mbox{\hyperlink{struct_code_binaire}{Code\+Binaire}} $\ast$}]{code }\end{DoxyParamCaption})}
+
+
+
+Fonction qui permet de supprimer une ligne (caractere + code binaire) dans la table de codage. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em tab} & \+: la table de codage \\
+\hline
+{\em c} & \+: le caractere a supprimer \\
+\hline
+{\em code} & \+: le code binaire a supprimer \\
+\hline
+\end{DoxyParams}

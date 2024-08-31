@@ -1,0 +1,192 @@
+\hypertarget{_compression_8h}{}\doxysection{Référence du fichier include/\+Compression.h}
+\label{_compression_8h}\index{include/Compression.h@{include/Compression.h}}
+
+
+Implantation de l\textquotesingle{}analyse descendante Compression pour le Compresseur d\textquotesingle{}Huffman.  
+
+
+{\ttfamily \#include $<$stdbool.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}Arbre\+Huffman.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}File\+De\+Priorite.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Ensemble.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Statistiques.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Table\+De\+Codage.\+h\char`\"{}}\newline
+\doxysubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_arbre_huffman}{Arbre\+Huffman}} \mbox{\hyperlink{_compression_8h_acb0249c619524773403a20e797bea39f}{COMP\+\_\+creer\+Arbre}} (\mbox{\hyperlink{struct_statistiques}{Statistiques}} stats)
+\begin{DoxyCompactList}\small\item\em Fonction qui crée un arbre à partir de statistiques. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_file_de_priorite}{File\+De\+Priorite}} \mbox{\hyperlink{_compression_8h_adb2a31d860b37fdc82f4661c0d2d32e8}{COMP\+\_\+inserer\+Arbre}} (\mbox{\hyperlink{struct_file_de_priorite}{File\+De\+Priorite}} file, \mbox{\hyperlink{struct_arbre_huffman}{Arbre\+Huffman}} arbre)
+\begin{DoxyCompactList}\small\item\em Fonction qui insère un arbre dans une file. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{_compression_8h_af61fb9ae299ab760f1958f1038907852}{COMP\+\_\+obtenir\+Occurences}} (char c)
+\begin{DoxyCompactList}\small\item\em Fonction qui permet d\textquotesingle{}obtenir les occurences d\textquotesingle{}un caractère donné \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_ensemble}{Ensemble}} \mbox{\hyperlink{_compression_8h_ab7310a71a8eaf7ec43129fb94db86340}{COMP\+\_\+obtenir\+Caracteres}} (char nom\+Fichier\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em Fonction qui permet d\textquotesingle{}obtenir les caractères présents dans un fichier donné \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_ensemble}{Ensemble}} \mbox{\hyperlink{_compression_8h_ac41510338fc26064280945f39622a07e}{COMP\+\_\+creer\+Statistiques}} (char nom\+Fichier\mbox{[}$\,$\mbox{]}, \mbox{\hyperlink{struct_ensemble}{Ensemble}} ensC)
+\begin{DoxyCompactList}\small\item\em Fonction qui permet de créer un ensemble de statistiques pour chaque caractère d\textquotesingle{}un fichier. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_file_de_priorite}{File\+De\+Priorite}} \mbox{\hyperlink{_compression_8h_a84abbe8ecaef2713c7b00093de901111}{COMP\+\_\+creer\+File\+De\+Priorite}} (char nom\+Fichier\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em Fonction qui permet de créer une file de priorité à partir d\textquotesingle{}un fichier donné \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_table_de_codage}{Table\+De\+Codage}} \mbox{\hyperlink{_compression_8h_a871d73b7f32e4fac8b60b82cc04ad396}{COMP\+\_\+creer\+Table\+De\+Codage}} (\mbox{\hyperlink{struct_arbre_huffman}{Arbre\+Huffman}} arbre)
+\begin{DoxyCompactList}\small\item\em Fonction qui permet de créer une table de codage à partir d\textquotesingle{}un arbre de Huffman. \end{DoxyCompactList}\item 
+FILE \mbox{\hyperlink{_compression_8h_ab96b5fefa7c31c54dd1421f7408880d6}{COMP\+\_\+compresser}} (char nom\+Fichier\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em Fonction qui permet de créer un fichier compressé à partir d\textquotesingle{}un fichier donné \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+Implantation de l\textquotesingle{}analyse descendante Compression pour le Compresseur d\textquotesingle{}Huffman. 
+
+\begin{DoxyAuthor}{Auteur}
+A. El Faïq, T. Barsot, W. Vilayvong, E. Lefeuvre 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Documentation des fonctions}
+\mbox{\Hypertarget{_compression_8h_ab96b5fefa7c31c54dd1421f7408880d6}\label{_compression_8h_ab96b5fefa7c31c54dd1421f7408880d6}} 
+\index{Compression.h@{Compression.h}!COMP\_compresser@{COMP\_compresser}}
+\index{COMP\_compresser@{COMP\_compresser}!Compression.h@{Compression.h}}
+\doxysubsubsection{\texorpdfstring{COMP\_compresser()}{COMP\_compresser()}}
+{\footnotesize\ttfamily FILE COMP\+\_\+compresser (\begin{DoxyParamCaption}\item[{char}]{nom\+Fichier\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Fonction qui permet de créer un fichier compressé à partir d\textquotesingle{}un fichier donné 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em nom\+Fichier} & \+: fichier à compresser \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+FILE 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_compression_8h_acb0249c619524773403a20e797bea39f}\label{_compression_8h_acb0249c619524773403a20e797bea39f}} 
+\index{Compression.h@{Compression.h}!COMP\_creerArbre@{COMP\_creerArbre}}
+\index{COMP\_creerArbre@{COMP\_creerArbre}!Compression.h@{Compression.h}}
+\doxysubsubsection{\texorpdfstring{COMP\_creerArbre()}{COMP\_creerArbre()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_arbre_huffman}{Arbre\+Huffman}} COMP\+\_\+creer\+Arbre (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_statistiques}{Statistiques}}}]{stats }\end{DoxyParamCaption})}
+
+
+
+Fonction qui crée un arbre à partir de statistiques. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em stats} & \+: statistiques de l\textquotesingle{}arbre créé \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+\mbox{\hyperlink{struct_arbre_huffman}{Arbre\+Huffman}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_compression_8h_a84abbe8ecaef2713c7b00093de901111}\label{_compression_8h_a84abbe8ecaef2713c7b00093de901111}} 
+\index{Compression.h@{Compression.h}!COMP\_creerFileDePriorite@{COMP\_creerFileDePriorite}}
+\index{COMP\_creerFileDePriorite@{COMP\_creerFileDePriorite}!Compression.h@{Compression.h}}
+\doxysubsubsection{\texorpdfstring{COMP\_creerFileDePriorite()}{COMP\_creerFileDePriorite()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_file_de_priorite}{File\+De\+Priorite}} COMP\+\_\+creer\+File\+De\+Priorite (\begin{DoxyParamCaption}\item[{char}]{nom\+Fichier\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Fonction qui permet de créer une file de priorité à partir d\textquotesingle{}un fichier donné 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em nom\+Fichier} & \+: nom du fichier à lire \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+\mbox{\hyperlink{struct_file_de_priorite}{File\+De\+Priorite}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_compression_8h_ac41510338fc26064280945f39622a07e}\label{_compression_8h_ac41510338fc26064280945f39622a07e}} 
+\index{Compression.h@{Compression.h}!COMP\_creerStatistiques@{COMP\_creerStatistiques}}
+\index{COMP\_creerStatistiques@{COMP\_creerStatistiques}!Compression.h@{Compression.h}}
+\doxysubsubsection{\texorpdfstring{COMP\_creerStatistiques()}{COMP\_creerStatistiques()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_ensemble}{Ensemble}} COMP\+\_\+creer\+Statistiques (\begin{DoxyParamCaption}\item[{char}]{nom\+Fichier\mbox{[}$\,$\mbox{]},  }\item[{\mbox{\hyperlink{struct_ensemble}{Ensemble}}}]{ensC }\end{DoxyParamCaption})}
+
+
+
+Fonction qui permet de créer un ensemble de statistiques pour chaque caractère d\textquotesingle{}un fichier. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em nom\+Fichier} & \+: nom du fichier à lire \\
+\hline
+{\em ensC} & \+: ensemble de caractères du fichier\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+\mbox{\hyperlink{struct_ensemble}{Ensemble}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_compression_8h_a871d73b7f32e4fac8b60b82cc04ad396}\label{_compression_8h_a871d73b7f32e4fac8b60b82cc04ad396}} 
+\index{Compression.h@{Compression.h}!COMP\_creerTableDeCodage@{COMP\_creerTableDeCodage}}
+\index{COMP\_creerTableDeCodage@{COMP\_creerTableDeCodage}!Compression.h@{Compression.h}}
+\doxysubsubsection{\texorpdfstring{COMP\_creerTableDeCodage()}{COMP\_creerTableDeCodage()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_table_de_codage}{Table\+De\+Codage}} COMP\+\_\+creer\+Table\+De\+Codage (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_arbre_huffman}{Arbre\+Huffman}}}]{arbre }\end{DoxyParamCaption})}
+
+
+
+Fonction qui permet de créer une table de codage à partir d\textquotesingle{}un arbre de Huffman. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em arbre} & \+: arbre à partir duquel est crée la table de codage \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+\mbox{\hyperlink{struct_table_de_codage}{Table\+De\+Codage}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_compression_8h_adb2a31d860b37fdc82f4661c0d2d32e8}\label{_compression_8h_adb2a31d860b37fdc82f4661c0d2d32e8}} 
+\index{Compression.h@{Compression.h}!COMP\_insererArbre@{COMP\_insererArbre}}
+\index{COMP\_insererArbre@{COMP\_insererArbre}!Compression.h@{Compression.h}}
+\doxysubsubsection{\texorpdfstring{COMP\_insererArbre()}{COMP\_insererArbre()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_file_de_priorite}{File\+De\+Priorite}} COMP\+\_\+inserer\+Arbre (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_file_de_priorite}{File\+De\+Priorite}}}]{file,  }\item[{\mbox{\hyperlink{struct_arbre_huffman}{Arbre\+Huffman}}}]{arbre }\end{DoxyParamCaption})}
+
+
+
+Fonction qui insère un arbre dans une file. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em arbre} & \+: arbre à insérer \\
+\hline
+{\em file} & \+: file à parcourir \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+\mbox{\hyperlink{struct_file_de_priorite}{File\+De\+Priorite}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_compression_8h_ab7310a71a8eaf7ec43129fb94db86340}\label{_compression_8h_ab7310a71a8eaf7ec43129fb94db86340}} 
+\index{Compression.h@{Compression.h}!COMP\_obtenirCaracteres@{COMP\_obtenirCaracteres}}
+\index{COMP\_obtenirCaracteres@{COMP\_obtenirCaracteres}!Compression.h@{Compression.h}}
+\doxysubsubsection{\texorpdfstring{COMP\_obtenirCaracteres()}{COMP\_obtenirCaracteres()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_ensemble}{Ensemble}} COMP\+\_\+obtenir\+Caracteres (\begin{DoxyParamCaption}\item[{char}]{nom\+Fichier\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Fonction qui permet d\textquotesingle{}obtenir les caractères présents dans un fichier donné 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em nom\+Fichier} & \+: nom du fichier à lire \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+\mbox{\hyperlink{struct_ensemble}{Ensemble}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_compression_8h_af61fb9ae299ab760f1958f1038907852}\label{_compression_8h_af61fb9ae299ab760f1958f1038907852}} 
+\index{Compression.h@{Compression.h}!COMP\_obtenirOccurences@{COMP\_obtenirOccurences}}
+\index{COMP\_obtenirOccurences@{COMP\_obtenirOccurences}!Compression.h@{Compression.h}}
+\doxysubsubsection{\texorpdfstring{COMP\_obtenirOccurences()}{COMP\_obtenirOccurences()}}
+{\footnotesize\ttfamily int COMP\+\_\+obtenir\+Occurences (\begin{DoxyParamCaption}\item[{char}]{c }\end{DoxyParamCaption})}
+
+
+
+Fonction qui permet d\textquotesingle{}obtenir les occurences d\textquotesingle{}un caractère donné 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em c} & \+: caractère à compter \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+int 
+\end{DoxyReturn}

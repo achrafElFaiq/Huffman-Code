@@ -1,0 +1,57 @@
+\hypertarget{_decompression_8h}{}\doxysection{Référence du fichier include/\+Decompression.h}
+\label{_decompression_8h}\index{include/Decompression.h@{include/Decompression.h}}
+
+
+Implantation de l\textquotesingle{}analyse Desvendante Decompression pour le Compresseur d\textquotesingle{}Huffman.  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdbool.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}Arbre\+Huffman.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}File\+De\+Priorite.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Ensemble.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Statistiques.\+h\char`\"{}}\newline
+\doxysubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_file_de_priorite}{File\+De\+Priorite}} \mbox{\hyperlink{_decompression_8h_ab6ebf544f812448802bcc4c63ac81edb}{DECOMP\+\_\+file\+From\+FILE}} (\mbox{\hyperlink{struct_file_de_priorite}{File\+De\+Priorite}} fp, char caracter, int ponderation)
+\begin{DoxyCompactList}\small\item\em Fonction qui permet d\textquotesingle{}obtenir la file de priorité à partir des statistiques du fichier compressé \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_decompression_8h_a84246909f8349f274c991a2f08333b76}\label{_decompression_8h_a84246909f8349f274c991a2f08333b76}} 
+FILE $\ast$ {\bfseries DECOMP\+\_\+decompresser} (const char $\ast$file\+Name)
+\item 
+\mbox{\Hypertarget{_decompression_8h_a06a033d804bb939c9fc20b62072239a4}\label{_decompression_8h_a06a033d804bb939c9fc20b62072239a4}} 
+\mbox{\hyperlink{struct_arbre_huffman}{Arbre\+Huffman}} {\bfseries DECOMP\+\_\+arbre\+Principale} (\mbox{\hyperlink{struct_file_de_priorite}{File\+De\+Priorite}} fp)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+Implantation de l\textquotesingle{}analyse Desvendante Decompression pour le Compresseur d\textquotesingle{}Huffman. 
+
+\begin{DoxyAuthor}{Auteur}
+A. El Faïq, T. Barsot, W. Vilayvong, E. Lefeuvre 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Documentation des fonctions}
+\mbox{\Hypertarget{_decompression_8h_ab6ebf544f812448802bcc4c63ac81edb}\label{_decompression_8h_ab6ebf544f812448802bcc4c63ac81edb}} 
+\index{Decompression.h@{Decompression.h}!DECOMP\_fileFromFILE@{DECOMP\_fileFromFILE}}
+\index{DECOMP\_fileFromFILE@{DECOMP\_fileFromFILE}!Decompression.h@{Decompression.h}}
+\doxysubsubsection{\texorpdfstring{DECOMP\_fileFromFILE()}{DECOMP\_fileFromFILE()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_file_de_priorite}{File\+De\+Priorite}} DECOMP\+\_\+file\+From\+FILE (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_file_de_priorite}{File\+De\+Priorite}}}]{fp,  }\item[{char}]{caracter,  }\item[{int}]{ponderation }\end{DoxyParamCaption})}
+
+
+
+Fonction qui permet d\textquotesingle{}obtenir la file de priorité à partir des statistiques du fichier compressé 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em fp} & une file de priorite \\
+\hline
+{\em caracter} & \+: un caractere \\
+\hline
+{\em ponderation} & une ponderation \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+\mbox{\hyperlink{struct_file_de_priorite}{File\+De\+Priorite}} 
+\end{DoxyReturn}

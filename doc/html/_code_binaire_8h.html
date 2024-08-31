@@ -1,0 +1,436 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Compresseur de Huffman: Référence du fichier include/CodeBinaire.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Compresseur de Huffman
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Structures de données</a> &#124;
+<a href="#enum-members">Énumérations</a> &#124;
+<a href="#func-members">Fonctions</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence du fichier CodeBinaire.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Implantation du TAD Code Binaire pour le Compresseur d'Huffman.  
+<a href="#details">Plus de détails...</a></p>
+<div class="textblock"><code>#include &lt;stdbool.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="_arbre_huffman_8h_source.html">ArbreHuffman.h</a>&quot;</code><br />
+</div>
+<p><a href="_code_binaire_8h_source.html">Aller au code source de ce fichier.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Structures de données</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_code_binaire.html">CodeBinaire</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Énumérations</h2></td></tr>
+<tr class="memitem:afa636332d8cd1d6ca643102a5ed11fc4"><td class="memItemLeft" align="right" valign="top"><a id="afa636332d8cd1d6ca643102a5ed11fc4"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_code_binaire_8h.html#afa636332d8cd1d6ca643102a5ed11fc4">Bit</a> { <b>BITA0</b>
+, <b>BITA1</b>
+ }</td></tr>
+<tr class="memdesc:afa636332d8cd1d6ca643102a5ed11fc4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Le type <a class="el" href="struct_code_binaire.html">CodeBinaire</a> permet de donner un code en binaire pour chaque caractere present dans le fichier. <br /></td></tr>
+<tr class="separator:afa636332d8cd1d6ca643102a5ed11fc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Fonctions</h2></td></tr>
+<tr class="memitem:a708171c28ea1f7de0ad301a7f01ae25d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_code_binaire_8h.html#a708171c28ea1f7de0ad301a7f01ae25d">CB_estVide</a> (<a class="el" href="struct_code_binaire.html">CodeBinaire</a> cb)</td></tr>
+<tr class="memdesc:a708171c28ea1f7de0ad301a7f01ae25d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction qui permet de savoir si un code est vide ou non.  <a href="_code_binaire_8h.html#a708171c28ea1f7de0ad301a7f01ae25d">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a708171c28ea1f7de0ad301a7f01ae25d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a196c7549b7bfab7d005c83b3daa1cab3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_code_binaire.html">CodeBinaire</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_code_binaire_8h.html#a196c7549b7bfab7d005c83b3daa1cab3">CB_creerCodeBinaire</a> (int taille)</td></tr>
+<tr class="memdesc:a196c7549b7bfab7d005c83b3daa1cab3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction qui creer un code binaire à partir de sa taille.  <a href="_code_binaire_8h.html#a196c7549b7bfab7d005c83b3daa1cab3">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a196c7549b7bfab7d005c83b3daa1cab3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e6e273a5a7b332b2ce14399462f97d2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_code_binaire_8h.html#a3e6e273a5a7b332b2ce14399462f97d2">CB_libererCodeBinaire</a> (<a class="el" href="struct_code_binaire.html">CodeBinaire</a> *code)</td></tr>
+<tr class="memdesc:a3e6e273a5a7b332b2ce14399462f97d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction qui libère un code binaire.  <a href="_code_binaire_8h.html#a3e6e273a5a7b332b2ce14399462f97d2">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a3e6e273a5a7b332b2ce14399462f97d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03969cb65920e515c9e449718d53ba88"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_code_binaire_8h.html#afa636332d8cd1d6ca643102a5ed11fc4">Bit</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_code_binaire_8h.html#a03969cb65920e515c9e449718d53ba88">CB_obtenirIemeBit</a> (<a class="el" href="struct_code_binaire.html">CodeBinaire</a> code, int i)</td></tr>
+<tr class="memdesc:a03969cb65920e515c9e449718d53ba88"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction qui permet d'obtenir le ieme bit d'un code binaire.  <a href="_code_binaire_8h.html#a03969cb65920e515c9e449718d53ba88">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a03969cb65920e515c9e449718d53ba88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4bb35e84be88da94c769dbc43c292a9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_code_binaire.html">CodeBinaire</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_code_binaire_8h.html#ad4bb35e84be88da94c769dbc43c292a9">CB_concatener</a> (const <a class="el" href="struct_code_binaire.html">CodeBinaire</a> *code1, const <a class="el" href="struct_code_binaire.html">CodeBinaire</a> *code2)</td></tr>
+<tr class="memdesc:ad4bb35e84be88da94c769dbc43c292a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction qui permet de concatener 2 codes binaires.  <a href="_code_binaire_8h.html#ad4bb35e84be88da94c769dbc43c292a9">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ad4bb35e84be88da94c769dbc43c292a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abac8a6c6ab828364822caafd947b9ec9"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_code_binaire_8h.html#abac8a6c6ab828364822caafd947b9ec9">CB_codeBinaireToStr</a> (const <a class="el" href="struct_code_binaire.html">CodeBinaire</a> *code)</td></tr>
+<tr class="memdesc:abac8a6c6ab828364822caafd947b9ec9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction qui permet de convertir un code binaire en chaîne de caractères.  <a href="_code_binaire_8h.html#abac8a6c6ab828364822caafd947b9ec9">Plus de détails...</a><br /></td></tr>
+<tr class="separator:abac8a6c6ab828364822caafd947b9ec9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c712ec0c055ed84792db5b608530d68"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_code_binaire_8h.html#a7c712ec0c055ed84792db5b608530d68">CB_remplirCodeBinaire</a> (<a class="el" href="struct_code_binaire.html">CodeBinaire</a> *code, const char *chaine)</td></tr>
+<tr class="memdesc:a7c712ec0c055ed84792db5b608530d68"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction qui permet de remplir un code binaire avec une chaîne de caractère.  <a href="_code_binaire_8h.html#a7c712ec0c055ed84792db5b608530d68">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a7c712ec0c055ed84792db5b608530d68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abeeb47ab20d492d90c14473b8569db0c"><td class="memItemLeft" align="right" valign="top"><a id="abeeb47ab20d492d90c14473b8569db0c"></a>
+<a class="el" href="struct_code_binaire.html">CodeBinaire</a>&#160;</td><td class="memItemRight" valign="bottom"><b>CB_CbFromAH</b> (<a class="el" href="struct_arbre_huffman.html">ArbreHuffman</a> *a, char car)</td></tr>
+<tr class="separator:abeeb47ab20d492d90c14473b8569db0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51216f82f75a6fcf8483fa3d3c4bd9b2"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_code_binaire_8h.html#a51216f82f75a6fcf8483fa3d3c4bd9b2">AH_obtenirCodeBinaire</a> (<a class="el" href="struct_arbre_huffman.html">ArbreHuffman</a> *a, char car)</td></tr>
+<tr class="memdesc:a51216f82f75a6fcf8483fa3d3c4bd9b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction qui permet de trouver la chaine de caractere qui va être convertie en code binaire par AH_CbFromAH.  <a href="_code_binaire_8h.html#a51216f82f75a6fcf8483fa3d3c4bd9b2">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a51216f82f75a6fcf8483fa3d3c4bd9b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0bca687a224b9011272b8c97c43caa1"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_code_binaire_8h.html#aa0bca687a224b9011272b8c97c43caa1">obtenirCodeBinaireR</a> (<a class="el" href="struct_arbre_huffman.html">ArbreHuffman</a> *a, char car)</td></tr>
+<tr class="memdesc:aa0bca687a224b9011272b8c97c43caa1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction récursive qui va permettre d'avoir le code binaire d'un caractere et qui va être appelé dans AH_obtenirCodeBinaire.  <a href="_code_binaire_8h.html#aa0bca687a224b9011272b8c97c43caa1">Plus de détails...</a><br /></td></tr>
+<tr class="separator:aa0bca687a224b9011272b8c97c43caa1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<div class="textblock"><p>Implantation du TAD Code Binaire pour le Compresseur d'Huffman. </p>
+<dl class="section author"><dt>Auteur</dt><dd>A. El Faïq, T. Barsot, W. Vilayvong, E. Lefeuvre </dd></dl>
+</div><h2 class="groupheader">Documentation des fonctions</h2>
+<a id="a51216f82f75a6fcf8483fa3d3c4bd9b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a51216f82f75a6fcf8483fa3d3c4bd9b2">&#9670;&nbsp;</a></span>AH_obtenirCodeBinaire()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char* AH_obtenirCodeBinaire </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_arbre_huffman.html">ArbreHuffman</a> *&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>car</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fonction qui permet de trouver la chaine de caractere qui va être convertie en code binaire par AH_CbFromAH. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">a</td><td>: l'arbre </td></tr>
+    <tr><td class="paramname">car</td><td>: le caractere dont on veut calculer le code </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>char* (la chaîne de caractère) </dd></dl>
+
+</div>
+</div>
+<a id="abac8a6c6ab828364822caafd947b9ec9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abac8a6c6ab828364822caafd947b9ec9">&#9670;&nbsp;</a></span>CB_codeBinaireToStr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char* CB_codeBinaireToStr </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_code_binaire.html">CodeBinaire</a> *&#160;</td>
+          <td class="paramname"><em>code</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fonction qui permet de convertir un code binaire en chaîne de caractères. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">code</td><td>: le code </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>char* (la chaîne de caractère) </dd></dl>
+
+</div>
+</div>
+<a id="ad4bb35e84be88da94c769dbc43c292a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4bb35e84be88da94c769dbc43c292a9">&#9670;&nbsp;</a></span>CB_concatener()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_code_binaire.html">CodeBinaire</a> CB_concatener </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_code_binaire.html">CodeBinaire</a> *&#160;</td>
+          <td class="paramname"><em>code1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_code_binaire.html">CodeBinaire</a> *&#160;</td>
+          <td class="paramname"><em>code2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fonction qui permet de concatener 2 codes binaires. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">code1</td><td>: le 1er code </td></tr>
+    <tr><td class="paramname">code2</td><td>: la 2nd code </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd><a class="el" href="struct_code_binaire.html">CodeBinaire</a> </dd></dl>
+
+</div>
+</div>
+<a id="a196c7549b7bfab7d005c83b3daa1cab3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a196c7549b7bfab7d005c83b3daa1cab3">&#9670;&nbsp;</a></span>CB_creerCodeBinaire()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_code_binaire.html">CodeBinaire</a> CB_creerCodeBinaire </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>taille</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fonction qui creer un code binaire à partir de sa taille. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">taille</td><td>: le nombre de bits </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd><a class="el" href="struct_code_binaire.html">CodeBinaire</a> </dd></dl>
+
+</div>
+</div>
+<a id="a708171c28ea1f7de0ad301a7f01ae25d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a708171c28ea1f7de0ad301a7f01ae25d">&#9670;&nbsp;</a></span>CB_estVide()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CB_estVide </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_code_binaire.html">CodeBinaire</a>&#160;</td>
+          <td class="paramname"><em>cb</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fonction qui permet de savoir si un code est vide ou non. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cb</td><td>: le code binaire </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>bool </dd></dl>
+
+</div>
+</div>
+<a id="a3e6e273a5a7b332b2ce14399462f97d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e6e273a5a7b332b2ce14399462f97d2">&#9670;&nbsp;</a></span>CB_libererCodeBinaire()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CB_libererCodeBinaire </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_code_binaire.html">CodeBinaire</a> *&#160;</td>
+          <td class="paramname"><em>code</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fonction qui libère un code binaire. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">code</td><td>: le code à liberer </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a03969cb65920e515c9e449718d53ba88"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a03969cb65920e515c9e449718d53ba88">&#9670;&nbsp;</a></span>CB_obtenirIemeBit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_code_binaire_8h.html#afa636332d8cd1d6ca643102a5ed11fc4">Bit</a> CB_obtenirIemeBit </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_code_binaire.html">CodeBinaire</a>&#160;</td>
+          <td class="paramname"><em>code</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>i</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fonction qui permet d'obtenir le ieme bit d'un code binaire. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">code</td><td>: le code </td></tr>
+    <tr><td class="paramname">i</td><td>: la position du bit à obtenir </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>Bit </dd></dl>
+
+</div>
+</div>
+<a id="a7c712ec0c055ed84792db5b608530d68"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c712ec0c055ed84792db5b608530d68">&#9670;&nbsp;</a></span>CB_remplirCodeBinaire()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CB_remplirCodeBinaire </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_code_binaire.html">CodeBinaire</a> *&#160;</td>
+          <td class="paramname"><em>code</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>chaine</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fonction qui permet de remplir un code binaire avec une chaîne de caractère. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">code</td><td>: le code à remplir </td></tr>
+    <tr><td class="paramname">chaine</td><td>: la chaine que le veut mettre dans le code binaire </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aa0bca687a224b9011272b8c97c43caa1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa0bca687a224b9011272b8c97c43caa1">&#9670;&nbsp;</a></span>obtenirCodeBinaireR()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char* obtenirCodeBinaireR </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_arbre_huffman.html">ArbreHuffman</a> *&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>car</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fonction récursive qui va permettre d'avoir le code binaire d'un caractere et qui va être appelé dans AH_obtenirCodeBinaire. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">a</td><td>: l'arbre </td></tr>
+    <tr><td class="paramname">car</td><td>: le caractere dont on veut calculer le code </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>char* (la chaîne de caractère) </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré le Lundi 8 Janvier 2024 19:26:31 pour Compresseur de Huffman par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

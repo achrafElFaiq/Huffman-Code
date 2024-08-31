@@ -1,0 +1,128 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Compresseur de Huffman:  Fichier source de include/CodeBinaire.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Compresseur de Huffman
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">CodeBinaire.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_code_binaire_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifndef  __CODEBINAIRE__</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#define __CODEBINAIRE__</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;stdbool.h&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_arbre_huffman_8h.html">ArbreHuffman.h</a>&quot;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="_code_binaire_8h.html#afa636332d8cd1d6ca643102a5ed11fc4">   17</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span> { BITA0, BITA1} <a class="code" href="_code_binaire_8h.html#afa636332d8cd1d6ca643102a5ed11fc4">Bit</a>;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="struct_code_binaire.html">   19</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="struct_code_binaire.html#abace54233d45b45e2bfc0a4231418c97">   20</a></span>&#160;    <a class="code" href="_code_binaire_8h.html#afa636332d8cd1d6ca643102a5ed11fc4">Bit</a>* <a class="code" href="struct_code_binaire.html#abace54233d45b45e2bfc0a4231418c97">bits</a>;         </div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="struct_code_binaire.html#a29bf3fc0ffe4e72e45f0c84ab4f8cd1e">   21</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="struct_code_binaire.html#a29bf3fc0ffe4e72e45f0c84ab4f8cd1e">taille</a>;     </div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;} <a class="code" href="struct_code_binaire.html">CodeBinaire</a>;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="_code_binaire_8h.html#a708171c28ea1f7de0ad301a7f01ae25d">CB_estVide</a>(<a class="code" href="struct_code_binaire.html">CodeBinaire</a> cb);</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<a class="code" href="struct_code_binaire.html">CodeBinaire</a> <a class="code" href="_code_binaire_8h.html#a196c7549b7bfab7d005c83b3daa1cab3">CB_creerCodeBinaire</a>(<span class="keywordtype">int</span> taille); </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keywordtype">void</span> <a class="code" href="_code_binaire_8h.html#a3e6e273a5a7b332b2ce14399462f97d2">CB_libererCodeBinaire</a>(<a class="code" href="struct_code_binaire.html">CodeBinaire</a>* code);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<a class="code" href="_code_binaire_8h.html#afa636332d8cd1d6ca643102a5ed11fc4">Bit</a> <a class="code" href="_code_binaire_8h.html#a03969cb65920e515c9e449718d53ba88">CB_obtenirIemeBit</a>(<a class="code" href="struct_code_binaire.html">CodeBinaire</a> code,<span class="keywordtype">int</span> i);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<a class="code" href="struct_code_binaire.html">CodeBinaire</a> <a class="code" href="_code_binaire_8h.html#ad4bb35e84be88da94c769dbc43c292a9">CB_concatener</a>(<span class="keyword">const</span> <a class="code" href="struct_code_binaire.html">CodeBinaire</a>* code1, <span class="keyword">const</span> <a class="code" href="struct_code_binaire.html">CodeBinaire</a>* code2);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="keywordtype">char</span>* <a class="code" href="_code_binaire_8h.html#abac8a6c6ab828364822caafd947b9ec9">CB_codeBinaireToStr</a>(<span class="keyword">const</span> <a class="code" href="struct_code_binaire.html">CodeBinaire</a>* code);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="keywordtype">void</span> <a class="code" href="_code_binaire_8h.html#a7c712ec0c055ed84792db5b608530d68">CB_remplirCodeBinaire</a>(<a class="code" href="struct_code_binaire.html">CodeBinaire</a>* code, <span class="keyword">const</span> <span class="keywordtype">char</span>* chaine);</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<a class="code" href="struct_code_binaire.html">CodeBinaire</a> CB_CbFromAH(<a class="code" href="struct_arbre_huffman.html">ArbreHuffman</a> *a, <span class="keywordtype">char</span> car);</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="keywordtype">char</span>* <a class="code" href="_code_binaire_8h.html#a51216f82f75a6fcf8483fa3d3c4bd9b2">AH_obtenirCodeBinaire</a>(<a class="code" href="struct_arbre_huffman.html">ArbreHuffman</a> *a, <span class="keywordtype">char</span> car);</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160; </div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="keywordtype">char</span>* <a class="code" href="_code_binaire_8h.html#aa0bca687a224b9011272b8c97c43caa1">obtenirCodeBinaireR</a>(<a class="code" href="struct_arbre_huffman.html">ArbreHuffman</a> *a, <span class="keywordtype">char</span> car );</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160; </div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="a_arbre_huffman_8h_html"><div class="ttname"><a href="_arbre_huffman_8h.html">ArbreHuffman.h</a></div><div class="ttdoc">Implantation du TAD Arbre Huffman pour le Compresseur d'Huffman.</div></div>
+<div class="ttc" id="a_code_binaire_8h_html_a03969cb65920e515c9e449718d53ba88"><div class="ttname"><a href="_code_binaire_8h.html#a03969cb65920e515c9e449718d53ba88">CB_obtenirIemeBit</a></div><div class="ttdeci">Bit CB_obtenirIemeBit(CodeBinaire code, int i)</div><div class="ttdoc">Fonction qui permet d'obtenir le ieme bit d'un code binaire.</div><div class="ttdef"><b>Definition:</b> CodeBinaire.c:43</div></div>
+<div class="ttc" id="a_code_binaire_8h_html_a196c7549b7bfab7d005c83b3daa1cab3"><div class="ttname"><a href="_code_binaire_8h.html#a196c7549b7bfab7d005c83b3daa1cab3">CB_creerCodeBinaire</a></div><div class="ttdeci">CodeBinaire CB_creerCodeBinaire(int taille)</div><div class="ttdoc">Fonction qui creer un code binaire à partir de sa taille.</div><div class="ttdef"><b>Definition:</b> CodeBinaire.c:13</div></div>
+<div class="ttc" id="a_code_binaire_8h_html_a3e6e273a5a7b332b2ce14399462f97d2"><div class="ttname"><a href="_code_binaire_8h.html#a3e6e273a5a7b332b2ce14399462f97d2">CB_libererCodeBinaire</a></div><div class="ttdeci">void CB_libererCodeBinaire(CodeBinaire *code)</div><div class="ttdoc">Fonction qui libère un code binaire.</div><div class="ttdef"><b>Definition:</b> CodeBinaire.c:38</div></div>
+<div class="ttc" id="a_code_binaire_8h_html_a51216f82f75a6fcf8483fa3d3c4bd9b2"><div class="ttname"><a href="_code_binaire_8h.html#a51216f82f75a6fcf8483fa3d3c4bd9b2">AH_obtenirCodeBinaire</a></div><div class="ttdeci">char * AH_obtenirCodeBinaire(ArbreHuffman *a, char car)</div><div class="ttdoc">Fonction qui permet de trouver la chaine de caractere qui va être convertie en code binaire par AH_Cb...</div><div class="ttdef"><b>Definition:</b> CodeBinaire.c:87</div></div>
+<div class="ttc" id="a_code_binaire_8h_html_a708171c28ea1f7de0ad301a7f01ae25d"><div class="ttname"><a href="_code_binaire_8h.html#a708171c28ea1f7de0ad301a7f01ae25d">CB_estVide</a></div><div class="ttdeci">bool CB_estVide(CodeBinaire cb)</div><div class="ttdoc">Fonction qui permet de savoir si un code est vide ou non.</div><div class="ttdef"><b>Definition:</b> CodeBinaire.c:8</div></div>
+<div class="ttc" id="a_code_binaire_8h_html_a7c712ec0c055ed84792db5b608530d68"><div class="ttname"><a href="_code_binaire_8h.html#a7c712ec0c055ed84792db5b608530d68">CB_remplirCodeBinaire</a></div><div class="ttdeci">void CB_remplirCodeBinaire(CodeBinaire *code, const char *chaine)</div><div class="ttdoc">Fonction qui permet de remplir un code binaire avec une chaîne de caractère.</div><div class="ttdef"><b>Definition:</b> CodeBinaire.c:23</div></div>
+<div class="ttc" id="a_code_binaire_8h_html_aa0bca687a224b9011272b8c97c43caa1"><div class="ttname"><a href="_code_binaire_8h.html#aa0bca687a224b9011272b8c97c43caa1">obtenirCodeBinaireR</a></div><div class="ttdeci">char * obtenirCodeBinaireR(ArbreHuffman *a, char car)</div><div class="ttdoc">Fonction récursive qui va permettre d'avoir le code binaire d'un caractere et qui va être appelé dans...</div><div class="ttdef"><b>Definition:</b> CodeBinaire.c:99</div></div>
+<div class="ttc" id="a_code_binaire_8h_html_abac8a6c6ab828364822caafd947b9ec9"><div class="ttname"><a href="_code_binaire_8h.html#abac8a6c6ab828364822caafd947b9ec9">CB_codeBinaireToStr</a></div><div class="ttdeci">char * CB_codeBinaireToStr(const CodeBinaire *code)</div><div class="ttdoc">Fonction qui permet de convertir un code binaire en chaîne de caractères.</div><div class="ttdef"><b>Definition:</b> CodeBinaire.c:69</div></div>
+<div class="ttc" id="a_code_binaire_8h_html_ad4bb35e84be88da94c769dbc43c292a9"><div class="ttname"><a href="_code_binaire_8h.html#ad4bb35e84be88da94c769dbc43c292a9">CB_concatener</a></div><div class="ttdeci">CodeBinaire CB_concatener(const CodeBinaire *code1, const CodeBinaire *code2)</div><div class="ttdoc">Fonction qui permet de concatener 2 codes binaires.</div><div class="ttdef"><b>Definition:</b> CodeBinaire.c:53</div></div>
+<div class="ttc" id="a_code_binaire_8h_html_afa636332d8cd1d6ca643102a5ed11fc4"><div class="ttname"><a href="_code_binaire_8h.html#afa636332d8cd1d6ca643102a5ed11fc4">Bit</a></div><div class="ttdeci">Bit</div><div class="ttdoc">Le type CodeBinaire permet de donner un code en binaire pour chaque caractere present dans le fichier...</div><div class="ttdef"><b>Definition:</b> CodeBinaire.h:17</div></div>
+<div class="ttc" id="astruct_arbre_huffman_html"><div class="ttname"><a href="struct_arbre_huffman.html">ArbreHuffman</a></div><div class="ttdef"><b>Definition:</b> ArbreHuffman.h:19</div></div>
+<div class="ttc" id="astruct_code_binaire_html"><div class="ttname"><a href="struct_code_binaire.html">CodeBinaire</a></div><div class="ttdef"><b>Definition:</b> CodeBinaire.h:19</div></div>
+<div class="ttc" id="astruct_code_binaire_html_a29bf3fc0ffe4e72e45f0c84ab4f8cd1e"><div class="ttname"><a href="struct_code_binaire.html#a29bf3fc0ffe4e72e45f0c84ab4f8cd1e">CodeBinaire::taille</a></div><div class="ttdeci">int taille</div><div class="ttdef"><b>Definition:</b> CodeBinaire.h:21</div></div>
+<div class="ttc" id="astruct_code_binaire_html_abace54233d45b45e2bfc0a4231418c97"><div class="ttname"><a href="struct_code_binaire.html#abace54233d45b45e2bfc0a4231418c97">CodeBinaire::bits</a></div><div class="ttdeci">Bit * bits</div><div class="ttdef"><b>Definition:</b> CodeBinaire.h:20</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré le Lundi 8 Janvier 2024 19:26:31 pour Compresseur de Huffman par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

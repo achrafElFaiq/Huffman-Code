@@ -1,0 +1,111 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Compresseur de Huffman:  Fichier source de include/Decompression.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Compresseur de Huffman
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Decompression.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_decompression_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#ifndef  __DECOMPRESSION__</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#define __DECOMPRESSION__</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;stdio.h&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;stdbool.h&gt;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_arbre_huffman_8h.html">ArbreHuffman.h</a>&quot;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_file_de_priorite_8h.html">FileDePriorite.h</a>&quot;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;Ensemble.h&quot;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_statistiques_8h.html">Statistiques.h</a>&quot;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<a class="code" href="struct_file_de_priorite.html">FileDePriorite</a> <a class="code" href="_decompression_8h.html#ab6ebf544f812448802bcc4c63ac81edb">DECOMP_fileFromFILE</a>(<a class="code" href="struct_file_de_priorite.html">FileDePriorite</a> fp,<span class="keywordtype">char</span> caracter,<span class="keywordtype">int</span> ponderation);</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;FILE* DECOMP_decompresser(<span class="keyword">const</span> <span class="keywordtype">char</span>* fileName);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<a class="code" href="struct_arbre_huffman.html">ArbreHuffman</a> DECOMP_arbrePrincipale(<a class="code" href="struct_file_de_priorite.html">FileDePriorite</a> fp);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="a_arbre_huffman_8h_html"><div class="ttname"><a href="_arbre_huffman_8h.html">ArbreHuffman.h</a></div><div class="ttdoc">Implantation du TAD Arbre Huffman pour le Compresseur d'Huffman.</div></div>
+<div class="ttc" id="a_decompression_8h_html_ab6ebf544f812448802bcc4c63ac81edb"><div class="ttname"><a href="_decompression_8h.html#ab6ebf544f812448802bcc4c63ac81edb">DECOMP_fileFromFILE</a></div><div class="ttdeci">FileDePriorite DECOMP_fileFromFILE(FileDePriorite fp, char caracter, int ponderation)</div><div class="ttdoc">Fonction qui permet d'obtenir la file de priorité à partir des statistiques du fichier compressé</div><div class="ttdef"><b>Definition:</b> Decompression.c:12</div></div>
+<div class="ttc" id="a_file_de_priorite_8h_html"><div class="ttname"><a href="_file_de_priorite_8h.html">FileDePriorite.h</a></div><div class="ttdoc">Implantation du TAD FileDePriorite pour le Compresseur d'Huffman.</div></div>
+<div class="ttc" id="a_statistiques_8h_html"><div class="ttname"><a href="_statistiques_8h.html">Statistiques.h</a></div><div class="ttdoc">Implantation du TAD Statistiques pour le Compresseur d'Huffman.</div></div>
+<div class="ttc" id="astruct_arbre_huffman_html"><div class="ttname"><a href="struct_arbre_huffman.html">ArbreHuffman</a></div><div class="ttdef"><b>Definition:</b> ArbreHuffman.h:19</div></div>
+<div class="ttc" id="astruct_file_de_priorite_html"><div class="ttname"><a href="struct_file_de_priorite.html">FileDePriorite</a></div><div class="ttdef"><b>Definition:</b> FileDePriorite.h:23</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré le Lundi 8 Janvier 2024 19:26:31 pour Compresseur de Huffman par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

@@ -1,0 +1,226 @@
+\hypertarget{_octet_8h}{}\doxysection{Référence du fichier include/\+Octet.h}
+\label{_octet_8h}\index{include/Octet.h@{include/Octet.h}}
+
+
+Implantation du TAD \mbox{\hyperlink{struct_octet}{Octet}} pour le Compresseur d\textquotesingle{}Huffman.  
+
+
+{\ttfamily \#include \char`\"{}Code\+Binaire.\+h\char`\"{}}\newline
+\doxysubsection*{Structures de données}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_octet}{Octet}}
+\begin{DoxyCompactList}\small\item\em Le type \mbox{\hyperlink{struct_octet}{Octet}} est un type qui permet de stocker des codes binaire dans des tableaux de 8 bits. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_code_binaire_8h_afa636332d8cd1d6ca643102a5ed11fc4}{Bit}} \mbox{\hyperlink{_octet_8h_a3bed67d0f97515f5d63b787534ab2415}{O\+\_\+ieme\+Bit}} (\mbox{\hyperlink{struct_octet}{Octet}} octet, int i)
+\begin{DoxyCompactList}\small\item\em Fonction qui permet d\textquotesingle{}obtenir le ieme bit d\textquotesingle{}un octet. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_octet}{Octet}} \mbox{\hyperlink{_octet_8h_a6dbea3372c102985fc05f0c7b0329244}{O\+\_\+creer\+Octet}} ()
+\begin{DoxyCompactList}\small\item\em Fonction qui creer un octet. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_octet_8h_a30c9e15ab18f5f9bd56561dc8ce786c1}\label{_octet_8h_a30c9e15ab18f5f9bd56561dc8ce786c1}} 
+bool {\bfseries O\+\_\+currentis\+Full} ()
+\item 
+\mbox{\hyperlink{struct_octet}{Octet}} \mbox{\hyperlink{_octet_8h_a72c9ed38d960bc53c4731f4141d2f5b2}{O\+\_\+encoder}} (\mbox{\hyperlink{struct_octet}{Octet}} octet, \mbox{\hyperlink{struct_code_binaire}{Code\+Binaire}} cb)
+\begin{DoxyCompactList}\small\item\em Fonction qui permet de remplir un octet avec un code binaire. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_octet_8h_a9490dd7f4d8f627b33f7edbedc6a4881}{O\+\_\+decaler}} (\mbox{\hyperlink{struct_octet}{Octet}} $\ast$octet)
+\begin{DoxyCompactList}\small\item\em Fonction qui va décaler tous les bits vers la gauche. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_octet_8h_a0b673f8e33e35afab3e833796bbc5fb1}{O\+\_\+fixer\+Bit}} (\mbox{\hyperlink{struct_octet}{Octet}} $\ast$octet, int position, \mbox{\hyperlink{_code_binaire_8h_afa636332d8cd1d6ca643102a5ed11fc4}{Bit}} valeur)
+\begin{DoxyCompactList}\small\item\em Fonction qui va fixer l\textquotesingle{}un des bits d\textquotesingle{}un octet. \end{DoxyCompactList}\item 
+char $\ast$ \mbox{\hyperlink{_octet_8h_a0af4b2b0f1faf30d7955ba92fcb18c5a}{O\+\_\+bits\+To\+Str}} (const \mbox{\hyperlink{struct_octet}{Octet}} $\ast$octet)
+\begin{DoxyCompactList}\small\item\em Fonction qui permet de convertir un octet en chaine de caractère. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_octet}{Octet}} \mbox{\hyperlink{_octet_8h_a8fa06dfffb1c35adcc035b9dbd24bf86}{O\+\_\+str\+To\+Bits}} (const char $\ast$chaine)
+\begin{DoxyCompactList}\small\item\em Fonction qui permet de convertir une chaine de caractere en \mbox{\hyperlink{struct_octet}{Octet}}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{_octet_8h_a063ff538c7f19f377c4b2fdeced10005}{O\+\_\+est\+Vide}} (const \mbox{\hyperlink{struct_octet}{Octet}} $\ast$octet)
+\begin{DoxyCompactList}\small\item\em Fonction qui permet de savoir si un octet est vide ou non. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_octet_8h_a91ef82d8f6b8d9004a6e9af6a6e31045}\label{_octet_8h_a91ef82d8f6b8d9004a6e9af6a6e31045}} 
+void \mbox{\hyperlink{_octet_8h_a91ef82d8f6b8d9004a6e9af6a6e31045}{O\+\_\+increment\+Start\+Position}} ()
+\begin{DoxyCompactList}\small\item\em Fonction qui va augmenter de 1 la position à laquelle l\textquotesingle{}octet va commencer à etre rempli. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{_octet_8h_a9d1e9d31064700562e9cbc80b03ef50a}{O\+\_\+obtenir\+Start\+Position}} ()
+\begin{DoxyCompactList}\small\item\em Fonction qui permet d\textquotesingle{}obtenir la position à laquelle l\textquotesingle{}octet va commencer à etre rempli. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_octet}{Octet}} \mbox{\hyperlink{_octet_8h_a683dc91858c22c016a7dbee12c83d01d}{O\+\_\+obtenir\+Bit\+Restants}} ()
+\begin{DoxyCompactList}\small\item\em Fonction qui permet de ressortir les bits qui avaient dépassé lors du remplissage d\textquotesingle{}un octet afin de les mettre dans un nouvel octet. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_octet_8h_a3383f1a0f74e5edfd0e0e684cdc5750e}\label{_octet_8h_a3383f1a0f74e5edfd0e0e684cdc5750e}} 
+int {\bfseries O\+\_\+obtenir\+Most\+Important\+Bit\+Restant} ()
+\item 
+\mbox{\Hypertarget{_octet_8h_a3de24780fd5416e063f51f1461c1f5be}\label{_octet_8h_a3de24780fd5416e063f51f1461c1f5be}} 
+\mbox{\hyperlink{struct_octet}{Octet}} {\bfseries O\+\_\+inverser} (\mbox{\hyperlink{struct_octet}{Octet}} o)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+Implantation du TAD \mbox{\hyperlink{struct_octet}{Octet}} pour le Compresseur d\textquotesingle{}Huffman. 
+
+\begin{DoxyAuthor}{Auteur}
+A. El Faïq, T. Barsot, W. Vilayvong, E. Lefeuvre 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Documentation des fonctions}
+\mbox{\Hypertarget{_octet_8h_a0af4b2b0f1faf30d7955ba92fcb18c5a}\label{_octet_8h_a0af4b2b0f1faf30d7955ba92fcb18c5a}} 
+\index{Octet.h@{Octet.h}!O\_bitsToStr@{O\_bitsToStr}}
+\index{O\_bitsToStr@{O\_bitsToStr}!Octet.h@{Octet.h}}
+\doxysubsubsection{\texorpdfstring{O\_bitsToStr()}{O\_bitsToStr()}}
+{\footnotesize\ttfamily char$\ast$ O\+\_\+bits\+To\+Str (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_octet}{Octet}} $\ast$}]{octet }\end{DoxyParamCaption})}
+
+
+
+Fonction qui permet de convertir un octet en chaine de caractère. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em octet} & \+: l\textquotesingle{}octet \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+char$\ast$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_octet_8h_a6dbea3372c102985fc05f0c7b0329244}\label{_octet_8h_a6dbea3372c102985fc05f0c7b0329244}} 
+\index{Octet.h@{Octet.h}!O\_creerOctet@{O\_creerOctet}}
+\index{O\_creerOctet@{O\_creerOctet}!Octet.h@{Octet.h}}
+\doxysubsubsection{\texorpdfstring{O\_creerOctet()}{O\_creerOctet()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_octet}{Octet}} O\+\_\+creer\+Octet (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Fonction qui creer un octet. 
+
+\begin{DoxyReturn}{Renvoie}
+\mbox{\hyperlink{struct_octet}{Octet}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_octet_8h_a9490dd7f4d8f627b33f7edbedc6a4881}\label{_octet_8h_a9490dd7f4d8f627b33f7edbedc6a4881}} 
+\index{Octet.h@{Octet.h}!O\_decaler@{O\_decaler}}
+\index{O\_decaler@{O\_decaler}!Octet.h@{Octet.h}}
+\doxysubsubsection{\texorpdfstring{O\_decaler()}{O\_decaler()}}
+{\footnotesize\ttfamily void O\+\_\+decaler (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_octet}{Octet}} $\ast$}]{octet }\end{DoxyParamCaption})}
+
+
+
+Fonction qui va décaler tous les bits vers la gauche. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em octet} & \+: l\textquotesingle{}octet \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_octet_8h_a72c9ed38d960bc53c4731f4141d2f5b2}\label{_octet_8h_a72c9ed38d960bc53c4731f4141d2f5b2}} 
+\index{Octet.h@{Octet.h}!O\_encoder@{O\_encoder}}
+\index{O\_encoder@{O\_encoder}!Octet.h@{Octet.h}}
+\doxysubsubsection{\texorpdfstring{O\_encoder()}{O\_encoder()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_octet}{Octet}} O\+\_\+encoder (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_octet}{Octet}}}]{octet,  }\item[{\mbox{\hyperlink{struct_code_binaire}{Code\+Binaire}}}]{cb }\end{DoxyParamCaption})}
+
+
+
+Fonction qui permet de remplir un octet avec un code binaire. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em octet} & \+: l\textquotesingle{}octet \\
+\hline
+{\em cb} & \+: le code binaire que l\textquotesingle{}on souhaite intégrer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+\mbox{\hyperlink{struct_octet}{Octet}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_octet_8h_a063ff538c7f19f377c4b2fdeced10005}\label{_octet_8h_a063ff538c7f19f377c4b2fdeced10005}} 
+\index{Octet.h@{Octet.h}!O\_estVide@{O\_estVide}}
+\index{O\_estVide@{O\_estVide}!Octet.h@{Octet.h}}
+\doxysubsubsection{\texorpdfstring{O\_estVide()}{O\_estVide()}}
+{\footnotesize\ttfamily bool O\+\_\+est\+Vide (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_octet}{Octet}} $\ast$}]{octet }\end{DoxyParamCaption})}
+
+
+
+Fonction qui permet de savoir si un octet est vide ou non. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em octet} & \+: l\textquotesingle{}octet \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+bool 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_octet_8h_a0b673f8e33e35afab3e833796bbc5fb1}\label{_octet_8h_a0b673f8e33e35afab3e833796bbc5fb1}} 
+\index{Octet.h@{Octet.h}!O\_fixerBit@{O\_fixerBit}}
+\index{O\_fixerBit@{O\_fixerBit}!Octet.h@{Octet.h}}
+\doxysubsubsection{\texorpdfstring{O\_fixerBit()}{O\_fixerBit()}}
+{\footnotesize\ttfamily void O\+\_\+fixer\+Bit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_octet}{Octet}} $\ast$}]{octet,  }\item[{int}]{position,  }\item[{\mbox{\hyperlink{_code_binaire_8h_afa636332d8cd1d6ca643102a5ed11fc4}{Bit}}}]{valeur }\end{DoxyParamCaption})}
+
+
+
+Fonction qui va fixer l\textquotesingle{}un des bits d\textquotesingle{}un octet. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em octet} & \+: l\textquotesingle{}octet \\
+\hline
+{\em position} & \+: la position du bit que l\textquotesingle{}on veut fixer \\
+\hline
+{\em valeur} & \+: la valeur du bit \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_octet_8h_a3bed67d0f97515f5d63b787534ab2415}\label{_octet_8h_a3bed67d0f97515f5d63b787534ab2415}} 
+\index{Octet.h@{Octet.h}!O\_iemeBit@{O\_iemeBit}}
+\index{O\_iemeBit@{O\_iemeBit}!Octet.h@{Octet.h}}
+\doxysubsubsection{\texorpdfstring{O\_iemeBit()}{O\_iemeBit()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_code_binaire_8h_afa636332d8cd1d6ca643102a5ed11fc4}{Bit}} O\+\_\+ieme\+Bit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_octet}{Octet}}}]{octet,  }\item[{int}]{i }\end{DoxyParamCaption})}
+
+
+
+Fonction qui permet d\textquotesingle{}obtenir le ieme bit d\textquotesingle{}un octet. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em octet} & \+: l\textquotesingle{}octet \\
+\hline
+{\em i} & \+: position du bit que l\textquotesingle{}on recherche \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+Bit 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_octet_8h_a683dc91858c22c016a7dbee12c83d01d}\label{_octet_8h_a683dc91858c22c016a7dbee12c83d01d}} 
+\index{Octet.h@{Octet.h}!O\_obtenirBitRestants@{O\_obtenirBitRestants}}
+\index{O\_obtenirBitRestants@{O\_obtenirBitRestants}!Octet.h@{Octet.h}}
+\doxysubsubsection{\texorpdfstring{O\_obtenirBitRestants()}{O\_obtenirBitRestants()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_octet}{Octet}} O\+\_\+obtenir\+Bit\+Restants (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Fonction qui permet de ressortir les bits qui avaient dépassé lors du remplissage d\textquotesingle{}un octet afin de les mettre dans un nouvel octet. 
+
+\begin{DoxyReturn}{Renvoie}
+\mbox{\hyperlink{struct_octet}{Octet}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_octet_8h_a9d1e9d31064700562e9cbc80b03ef50a}\label{_octet_8h_a9d1e9d31064700562e9cbc80b03ef50a}} 
+\index{Octet.h@{Octet.h}!O\_obtenirStartPosition@{O\_obtenirStartPosition}}
+\index{O\_obtenirStartPosition@{O\_obtenirStartPosition}!Octet.h@{Octet.h}}
+\doxysubsubsection{\texorpdfstring{O\_obtenirStartPosition()}{O\_obtenirStartPosition()}}
+{\footnotesize\ttfamily int O\+\_\+obtenir\+Start\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Fonction qui permet d\textquotesingle{}obtenir la position à laquelle l\textquotesingle{}octet va commencer à etre rempli. 
+
+\begin{DoxyReturn}{Renvoie}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_octet_8h_a8fa06dfffb1c35adcc035b9dbd24bf86}\label{_octet_8h_a8fa06dfffb1c35adcc035b9dbd24bf86}} 
+\index{Octet.h@{Octet.h}!O\_strToBits@{O\_strToBits}}
+\index{O\_strToBits@{O\_strToBits}!Octet.h@{Octet.h}}
+\doxysubsubsection{\texorpdfstring{O\_strToBits()}{O\_strToBits()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_octet}{Octet}} O\+\_\+str\+To\+Bits (\begin{DoxyParamCaption}\item[{const char $\ast$}]{chaine }\end{DoxyParamCaption})}
+
+
+
+Fonction qui permet de convertir une chaine de caractere en \mbox{\hyperlink{struct_octet}{Octet}}. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em chaine} & \+: la chaine de caractere \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+\mbox{\hyperlink{struct_octet}{Octet}} 
+\end{DoxyReturn}

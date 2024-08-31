@@ -1,0 +1,136 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Compresseur de Huffman:  Fichier source de include/Octet.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Compresseur de Huffman
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Octet.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_octet_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifndef __OCTET__</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#define __OCTET__</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_code_binaire_8h.html">CodeBinaire.h</a>&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="struct_octet.html">   17</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="struct_octet.html#a84dfcdb368d154ed65cdf650bef4a978">   18</a></span>&#160;    <a class="code" href="_code_binaire_8h.html#afa636332d8cd1d6ca643102a5ed11fc4">Bit</a> bits[8];  </div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;} <a class="code" href="struct_octet.html">Octet</a>;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<a class="code" href="_code_binaire_8h.html#afa636332d8cd1d6ca643102a5ed11fc4">Bit</a> <a class="code" href="_octet_8h.html#a3bed67d0f97515f5d63b787534ab2415">O_iemeBit</a>(<a class="code" href="struct_octet.html">Octet</a> octet,<span class="keywordtype">int</span> i);</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<a class="code" href="struct_octet.html">Octet</a> <a class="code" href="_octet_8h.html#a6dbea3372c102985fc05f0c7b0329244">O_creerOctet</a>();</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keywordtype">bool</span> O_currentisFull();</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<a class="code" href="struct_octet.html">Octet</a> <a class="code" href="_octet_8h.html#a72c9ed38d960bc53c4731f4141d2f5b2">O_encoder</a>(<a class="code" href="struct_octet.html">Octet</a> octet,<a class="code" href="struct_code_binaire.html">CodeBinaire</a> cb);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="keywordtype">void</span> <a class="code" href="_octet_8h.html#a9490dd7f4d8f627b33f7edbedc6a4881">O_decaler</a>(<a class="code" href="struct_octet.html">Octet</a> *octet);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="keywordtype">void</span> <a class="code" href="_octet_8h.html#a0b673f8e33e35afab3e833796bbc5fb1">O_fixerBit</a>(<a class="code" href="struct_octet.html">Octet</a>* octet, <span class="keywordtype">int</span> position, <a class="code" href="_code_binaire_8h.html#afa636332d8cd1d6ca643102a5ed11fc4">Bit</a> valeur);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="keywordtype">char</span>* <a class="code" href="_octet_8h.html#a0af4b2b0f1faf30d7955ba92fcb18c5a">O_bitsToStr</a>(<span class="keyword">const</span> <a class="code" href="struct_octet.html">Octet</a>* octet);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<a class="code" href="struct_octet.html">Octet</a> <a class="code" href="_octet_8h.html#a8fa06dfffb1c35adcc035b9dbd24bf86">O_strToBits</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* chaine);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="_octet_8h.html#a063ff538c7f19f377c4b2fdeced10005">O_estVide</a>(<span class="keyword">const</span> <a class="code" href="struct_octet.html">Octet</a>* octet);</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="keywordtype">void</span> <a class="code" href="_octet_8h.html#a91ef82d8f6b8d9004a6e9af6a6e31045">O_incrementStartPosition</a>();</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="keywordtype">int</span> <a class="code" href="_octet_8h.html#a9d1e9d31064700562e9cbc80b03ef50a">O_obtenirStartPosition</a>();</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160; </div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<a class="code" href="struct_octet.html">Octet</a> <a class="code" href="_octet_8h.html#a683dc91858c22c016a7dbee12c83d01d">O_obtenirBitRestants</a>();</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160; </div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160; </div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="keywordtype">int</span> O_obtenirMostImportantBitRestant();</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<a class="code" href="struct_octet.html">Octet</a> O_inverser(<a class="code" href="struct_octet.html">Octet</a> o);</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160; </div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="a_code_binaire_8h_html"><div class="ttname"><a href="_code_binaire_8h.html">CodeBinaire.h</a></div><div class="ttdoc">Implantation du TAD Code Binaire pour le Compresseur d'Huffman.</div></div>
+<div class="ttc" id="a_code_binaire_8h_html_afa636332d8cd1d6ca643102a5ed11fc4"><div class="ttname"><a href="_code_binaire_8h.html#afa636332d8cd1d6ca643102a5ed11fc4">Bit</a></div><div class="ttdeci">Bit</div><div class="ttdoc">Le type CodeBinaire permet de donner un code en binaire pour chaque caractere present dans le fichier...</div><div class="ttdef"><b>Definition:</b> CodeBinaire.h:17</div></div>
+<div class="ttc" id="a_octet_8h_html_a063ff538c7f19f377c4b2fdeced10005"><div class="ttname"><a href="_octet_8h.html#a063ff538c7f19f377c4b2fdeced10005">O_estVide</a></div><div class="ttdeci">bool O_estVide(const Octet *octet)</div><div class="ttdoc">Fonction qui permet de savoir si un octet est vide ou non.</div><div class="ttdef"><b>Definition:</b> Octet.c:159</div></div>
+<div class="ttc" id="a_octet_8h_html_a0af4b2b0f1faf30d7955ba92fcb18c5a"><div class="ttname"><a href="_octet_8h.html#a0af4b2b0f1faf30d7955ba92fcb18c5a">O_bitsToStr</a></div><div class="ttdeci">char * O_bitsToStr(const Octet *octet)</div><div class="ttdoc">Fonction qui permet de convertir un octet en chaine de caractère.</div><div class="ttdef"><b>Definition:</b> Octet.c:68</div></div>
+<div class="ttc" id="a_octet_8h_html_a0b673f8e33e35afab3e833796bbc5fb1"><div class="ttname"><a href="_octet_8h.html#a0b673f8e33e35afab3e833796bbc5fb1">O_fixerBit</a></div><div class="ttdeci">void O_fixerBit(Octet *octet, int position, Bit valeur)</div><div class="ttdoc">Fonction qui va fixer l'un des bits d'un octet.</div><div class="ttdef"><b>Definition:</b> Octet.c:40</div></div>
+<div class="ttc" id="a_octet_8h_html_a3bed67d0f97515f5d63b787534ab2415"><div class="ttname"><a href="_octet_8h.html#a3bed67d0f97515f5d63b787534ab2415">O_iemeBit</a></div><div class="ttdeci">Bit O_iemeBit(Octet octet, int i)</div><div class="ttdoc">Fonction qui permet d'obtenir le ieme bit d'un octet.</div><div class="ttdef"><b>Definition:</b> Octet.c:54</div></div>
+<div class="ttc" id="a_octet_8h_html_a683dc91858c22c016a7dbee12c83d01d"><div class="ttname"><a href="_octet_8h.html#a683dc91858c22c016a7dbee12c83d01d">O_obtenirBitRestants</a></div><div class="ttdeci">Octet O_obtenirBitRestants()</div><div class="ttdoc">Fonction qui permet de ressortir les bits qui avaient dépassé lors du remplissage d'un octet afin de ...</div><div class="ttdef"><b>Definition:</b> Octet.c:13</div></div>
+<div class="ttc" id="a_octet_8h_html_a6dbea3372c102985fc05f0c7b0329244"><div class="ttname"><a href="_octet_8h.html#a6dbea3372c102985fc05f0c7b0329244">O_creerOctet</a></div><div class="ttdeci">Octet O_creerOctet()</div><div class="ttdoc">Fonction qui creer un octet.</div><div class="ttdef"><b>Definition:</b> Octet.c:30</div></div>
+<div class="ttc" id="a_octet_8h_html_a72c9ed38d960bc53c4731f4141d2f5b2"><div class="ttname"><a href="_octet_8h.html#a72c9ed38d960bc53c4731f4141d2f5b2">O_encoder</a></div><div class="ttdeci">Octet O_encoder(Octet octet, CodeBinaire cb)</div><div class="ttdoc">Fonction qui permet de remplir un octet avec un code binaire.</div><div class="ttdef"><b>Definition:</b> Octet.c:95</div></div>
+<div class="ttc" id="a_octet_8h_html_a8fa06dfffb1c35adcc035b9dbd24bf86"><div class="ttname"><a href="_octet_8h.html#a8fa06dfffb1c35adcc035b9dbd24bf86">O_strToBits</a></div><div class="ttdeci">Octet O_strToBits(const char *chaine)</div><div class="ttdoc">Fonction qui permet de convertir une chaine de caractere en Octet.</div><div class="ttdef"><b>Definition:</b> Octet.c:78</div></div>
+<div class="ttc" id="a_octet_8h_html_a91ef82d8f6b8d9004a6e9af6a6e31045"><div class="ttname"><a href="_octet_8h.html#a91ef82d8f6b8d9004a6e9af6a6e31045">O_incrementStartPosition</a></div><div class="ttdeci">void O_incrementStartPosition()</div><div class="ttdoc">Fonction qui va augmenter de 1 la position à laquelle l'octet va commencer à etre rempli.</div><div class="ttdef"><b>Definition:</b> Octet.c:22</div></div>
+<div class="ttc" id="a_octet_8h_html_a9490dd7f4d8f627b33f7edbedc6a4881"><div class="ttname"><a href="_octet_8h.html#a9490dd7f4d8f627b33f7edbedc6a4881">O_decaler</a></div><div class="ttdeci">void O_decaler(Octet *octet)</div><div class="ttdoc">Fonction qui va décaler tous les bits vers la gauche.</div><div class="ttdef"><b>Definition:</b> Octet.c:60</div></div>
+<div class="ttc" id="a_octet_8h_html_a9d1e9d31064700562e9cbc80b03ef50a"><div class="ttname"><a href="_octet_8h.html#a9d1e9d31064700562e9cbc80b03ef50a">O_obtenirStartPosition</a></div><div class="ttdeci">int O_obtenirStartPosition()</div><div class="ttdoc">Fonction qui permet d'obtenir la position à laquelle l'octet va commencer à etre rempli.</div><div class="ttdef"><b>Definition:</b> Octet.c:26</div></div>
+<div class="ttc" id="astruct_code_binaire_html"><div class="ttname"><a href="struct_code_binaire.html">CodeBinaire</a></div><div class="ttdef"><b>Definition:</b> CodeBinaire.h:19</div></div>
+<div class="ttc" id="astruct_octet_html"><div class="ttname"><a href="struct_octet.html">Octet</a></div><div class="ttdoc">Le type Octet est un type qui permet de stocker des codes binaire dans des tableaux de 8 bits.</div><div class="ttdef"><b>Definition:</b> Octet.h:17</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré le Lundi 8 Janvier 2024 19:26:31 pour Compresseur de Huffman par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

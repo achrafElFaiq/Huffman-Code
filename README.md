@@ -31,8 +31,7 @@ Un programme en C capable de compresser un fichier texte en fichier binaire, et 
 - `tests/`: Tests unitaires
 - `bin/`: Exécutables
 - `doc/`: Documentation générée par Doxygen
-- `Conception détaillée/`: Contient les .tex de la CD
-- `Conception préliminaire/`: Contient les .tex de la CP
+
 
 ## Utilisation
 

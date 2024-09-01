@@ -1,5 +1,3 @@
-# ITI_ALGO_2023_2024_GP15
-
 # Compresseur de Huffman
 
 **Auteurs:** [LEFEUVRE Elouen - BARSOT Thomas - EL FAIQ Achraf - VILAYVONG Woody]
